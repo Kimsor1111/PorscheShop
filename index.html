@@ -8,15 +8,79 @@
       rel="stylesheet"
       href="node_modules/bootstrap/dist/css/bootstrap.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="w-100 vh-100">
+    <!-- video and navbar -->
+    <div class="feature-container position-relative w-100 vh-100">
+      <div class="feature-content position-absolute w-100 h-100">
+        <nav class="navbar z-1">
+          <div class="container-fluid">
+            <button
+              class="navbar-toggler p-2"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasNavbar"
+              aria-controls="offcanvasNavbar"
+              aria-label="Toggle navigation"
+            >
+              <i class="fa-solid fa-bars fs-5 text-light"></i>
+            </button>
+            <a href="#" class="navbar-logo">
+              <img
+                class="w-100 h-100 object-fit-contain"
+                src="Image/logo.png"
+                alt=""
+              />
+            </a>
+            <a
+              href="#"
+              class="navbar-toggler text-decoration-none p-2"
+              type="button"
+            >
+              <i class="fa-solid fa-user fs-5 text-light"></i>
+            </a>
+            <div
+              class="offcanvas offcanvas-start"
+              tabindex="-1"
+              id="offcanvasNavbar"
+              aria-labelledby="offcanvasNavbarLabel"
+            >
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="offcanvas"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#"
+                      >Home</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
       <video
         class="w-100 h-100 object-fit-cover"
         src="Video/video.mp4"
         autoplay
         loop
+        muted
       ></video>
     </div>
   </body>
