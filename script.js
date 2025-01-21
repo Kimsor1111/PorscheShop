@@ -1,19 +1,39 @@
+//pause/play
 const Video = document.querySelector(".feature-container video");
-const VideoBtn = document.querySelector(
+const VideoBtnPause = document.querySelector(
   ".feature-container .feature-content .content .pause"
 );
-const VideoBtnIcon = VideoBtn.querySelector("i");
+const VideoBtnIconPause = VideoBtnPause.querySelector("i");
 var isPlaying = true;
-VideoBtn.addEventListener("click", () => {
+VideoBtnPause.addEventListener("click", () => {
   if (isPlaying) {
     Video.pause();
-    VideoBtnIcon.classList.add("fa-play");
-    VideoBtnIcon.classList.remove("fa-pause");
+    VideoBtnIconPause.classList.add("fa-play");
+    VideoBtnIconPause.classList.remove("fa-pause");
     isPlaying = false;
   } else {
     Video.play();
-    VideoBtnIcon.classList.remove("fa-play");
-    VideoBtnIcon.classList.add("fa-pause");
+    VideoBtnIconPause.classList.remove("fa-play");
+    VideoBtnIconPause.classList.add("fa-pause");
     isPlaying = true;
+  }
+});
+
+var isMute = true;
+const VideoBtnMute = document.querySelector(
+  ".feature-container .feature-content .content .sound"
+);
+const VideoBtnIconMute = VideoBtnMute.querySelector("i");
+VideoBtnMute.addEventListener("click", () => {
+  if (isMute) {
+    Video.muted = false;
+    VideoBtnIconMute.classList.remove("fa-volume-xmark");
+    VideoBtnIconMute.classList.add("fa-volume-high");
+    isMute = false;
+  } else {
+    Video.muted = true;
+    VideoBtnIconMute.classList.add("fa-volume-xmark");
+    VideoBtnIconMute.classList.remove("fa-volume-high");
+    isMute = true;
   }
 });
