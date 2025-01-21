@@ -37,3 +37,5 @@ VideoBtnMute.addEventListener("click", () => {
     isMute = true;
   }
 });
+
+alert(navigator.platform)
