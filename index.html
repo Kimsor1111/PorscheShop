@@ -14,7 +14,7 @@
   <body>
     <!-- video and navbar -->
     <div class="feature-container position-relative w-100 vh-100">
-      <div class="feature-content position-absolute w-100 h-100">
+      <div class="feature-content bg- position-absolute w-100 h-100">
         <!-- navbar -->
         <nav class="navbar z-1">
           <div class="container-fluid">
@@ -69,12 +69,13 @@
         </nav>
       </div>
       <video
-        class="w-100 h-100 object-fit-cover"
+        class="d-lg-block d-none w-100 h-100 object-fit-cover"
         src="Video/video.mp4"
         autoplay
         loop
         muted
       ></video>
+      <img class="d-lg-none d-block w-100 h-100 object-fit-cover" src="Image/featureTop.jpg" alt="">
     </div>
   </body>
   <script src="asset/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
