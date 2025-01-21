@@ -11,7 +11,7 @@
   cursor: pointer;
 }
 .feature-container .feature-content {
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.6);
   z-index: 10;
 }
 .feature-container .feature-content .navbar{
@@ -43,7 +43,7 @@
   position: relative;
 }
 .feature-container .feature-content .content .des{
-  width: 330px;
+  width: 400px;
   height: fit-content;
   bottom: 150px;
   left: 50px;
@@ -51,13 +51,14 @@
 }
 .feature-container .feature-content .content .des h1{
   color: white;
-  font-size: 60px;
+  font-size: 70px;
 }
 .feature-container .feature-content .content .des button{
-  width: 220px;
+  width: 100%;
   height: 50px;
   border: 2.5px solid white;
   border-radius: 5px;
+  font-size: 18px;
   color: white;
   background-color: transparent;
   transition: .2s ease;
