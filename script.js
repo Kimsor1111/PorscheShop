@@ -1,7 +1,3 @@
-//check ios device
-if (/iPad|iPhone|iPod/.test(navigator.platform)) {
-  alert("IOS")
-}
 
 //pause/play
 const Video = document.querySelector(".feature-container video");
@@ -24,6 +20,7 @@ VideoBtnPause.addEventListener("click", () => {
   }
 });
 
+//sound
 var isMute = true;
 const VideoBtnMute = document.querySelector(
   ".feature-container .feature-content .content .sound"
