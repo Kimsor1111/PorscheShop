@@ -1,3 +1,8 @@
+//check ios device
+if (/iPad|iPhone|iPod/.test(navigator.platform)) {
+  alert("IOS")
+}
+
 //pause/play
 const Video = document.querySelector(".feature-container video");
 const VideoBtnPause = document.querySelector(
@@ -37,6 +42,3 @@ VideoBtnMute.addEventListener("click", () => {
     isMute = true;
   }
 });
-
-alert(navigator.platform);
-alert(navigator.platform);

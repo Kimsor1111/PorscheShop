@@ -65,6 +65,7 @@
 }
 
 .feature-container .feature-content .content .pause:hover,
+.feature-container .feature-content .content .sound:hover,
 .feature-container .feature-content .content .des button:hover{
   background-color: rgba(207, 207, 207, 0.378);
   border: 2.5px solid rgb(207, 207, 207);
