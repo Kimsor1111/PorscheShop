@@ -7,7 +7,7 @@
   display: none;
 }
 .feature-container .feature-content {
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.4);
 }
 .feature-container .feature-content .navbar .container-fluid .navbar-toggler {
   border: none;
