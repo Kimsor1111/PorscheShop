@@ -38,4 +38,5 @@ VideoBtnMute.addEventListener("click", () => {
   }
 });
 
-alert(navigator.platform)
+alert(navigator.platform);
+alert(navigator.platform);
