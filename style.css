@@ -1,3 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+body{
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    font-style: normal;
+}
+h2{
+    font-size: 50px;
+}
 .card {
     border: none;
     overflow: hidden;
@@ -11,24 +20,22 @@
     position: relative;
 }
 
-.image-overlay img {
+.image-overlay .image {
     width: 100%;
     height: auto;
     border-radius: 0.5rem;
     transition: all 0.5s;
 }
-
-.overlay-title {
+.image-overlay :nth-child(2) {
     position: absolute;
     top: 20px;
     left: 15px;
-    color: white;
-    font-size: 1.5rem;
+    width: 10rem;
+    height: 3rem;
     font-weight: bold;
     text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
-    font-family: "Asset", serif;
-    font-weight: 400;
-    font-style: normal;
+    filter: invert(1);
+
 }
 
 .overlay-badge {
@@ -48,9 +55,6 @@
     width: 100%;
     color: white;
     font-size: 20px;
-    font-family: "Coustard", serif;
-    font-weight: 400;
-    font-style: normal;
     border-bottom-left-radius: 0.5rem;
     border-bottom-right-radius: 0.5rem;
 }
@@ -58,10 +62,6 @@
 .price {
     font-size: 1.25rem;
     color: #e0e0e0;
-    font-size: 15px;
-    font-family: "Coustard", serif;
-    font-weight: 400;
-    font-style: normal;
 }
 
 .btn-light {
