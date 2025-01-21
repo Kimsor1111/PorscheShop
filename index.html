@@ -3,18 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Project Clone Porsche</title>
+    <title>Porsche</title>
     <link rel="stylesheet" href="asset/bootstrap/dist/css/bootstrap.min.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css" />
+    <link rel="icon" href="Image/porsche_icon.png"  type="image/x-icon">
   </head>
   <body>
     <!-- video and navbar -->
     <div class="feature-container position-relative w-100 vh-100">
-      <div class="feature-content bg- position-absolute w-100 h-100">
+      <div class="feature-content position-absolute w-100 h-100">
         <!-- navbar -->
         <nav class="navbar z-1">
           <div class="container-fluid">
@@ -26,12 +28,17 @@
               aria-controls="offcanvasNavbar"
               aria-label="Toggle navigation"
             >
-              <i class="fa-solid fa-bars fs-5 text-light"></i>
+              <i class="fa-solid fa-bars fs-4 text-light"></i>
             </button>
             <a href="#" class="navbar-logo">
               <img
-                class="w-100 h-100 object-fit-contain"
-                src="Image/logo.png"
+                class="d-md-block d-none w-100 h-100 object-fit-contain"
+                src="Image/porsche_text.png"
+                alt=""
+              />
+              <img
+                class="d-md-none d-block w-100 h-100 object-fit-contain"
+                src="Image/porsche_logo.png"
                 alt=""
               />
             </a>
@@ -40,7 +47,7 @@
               class="navbar-toggler text-decoration-none p-2"
               type="button"
             >
-              <i class="fa-solid fa-user fs-5 text-light"></i>
+              <i class="fa-regular fa-user fs-4 text-light"></i>
             </a>
             <!-- sidmenu -->
             <div
@@ -67,6 +74,15 @@
             </div>
           </div>
         </nav>
+        <div class="content">
+          <div class="des">
+            <h1>Keep Your Essence.</h1>
+            <button>Discover More</button>
+          </div>
+          <div class="pause d-lg-flex d-none">
+            <i class="fa-solid fa-pause text-light fs-4"></i>
+          </div>
+        </div>
       </div>
       <video
         class="d-lg-block d-none w-100 h-100 object-fit-cover"
@@ -77,6 +93,8 @@
       ></video>
       <img class="d-lg-none d-block w-100 h-100 object-fit-cover" src="Image/featureTop.jpg" alt="">
     </div>
+    <br><br><br><br><br><br><br><br><br><br>
   </body>
   <script src="asset/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
 </html>
