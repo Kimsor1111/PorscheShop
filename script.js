@@ -1,4 +1,11 @@
-alert(navigator.platform)
+if (
+  /iPad|iPhone|iPod/.test(navigator.userAgent) ||
+  (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1)
+) {
+  alert("This is an iPhone or iPad!");
+} else {
+  alert("This is not an iOS device!");
+}
 //pause/play
 const Video = document.querySelector(".feature-container video");
 const VideoBtnPause = document.querySelector(
