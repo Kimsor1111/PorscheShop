@@ -1,4 +1,4 @@
-
+alert(navigator.platform)
 //pause/play
 const Video = document.querySelector(".feature-container video");
 const VideoBtnPause = document.querySelector(
