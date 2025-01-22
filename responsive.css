@@ -9,12 +9,41 @@
   .small-banner-container .small-banner {
     width: 70%;
   }
+  .feature-container
+    .feature-content
+    .navbar
+    .container-fluid
+    .side-menu-container {
+    width: 90%;
+  }
 }
 
 /*Small devices (landscape phones, 576px and up)*/
 @media (max-width: 767.98px) {
   .feature-container .feature-content .navbar {
     height: 15%;
+  }
+  .feature-container
+    .feature-content
+    .navbar
+    .container-fluid
+    .side-menu-container {
+    width: 100%;
+  }
+  .feature-container
+  .feature-content
+  .navbar
+  .container-fluid
+  .side-menu-container
+  .nav-side-left,
+.feature-container
+  .feature-content
+  .navbar
+  .container-fluid
+  .side-menu-container
+  .nav-side-right{
+    width: 100%;
+    position: absolute;
   }
   .feature-container .feature-content .content {
     height: 85%;

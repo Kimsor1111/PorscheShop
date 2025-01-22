@@ -55,26 +55,52 @@
             </a>
             <!-- sidmenu -->
             <div
-              class="offcanvas offcanvas-start"
+              class="side-menu-container d-flex flex-row offcanvas offcanvas-start"
               tabindex="-1"
               id="offcanvasNavbar"
               aria-labelledby="offcanvasNavbarLabel"
             >
-              <div class="offcanvas-header">
-                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
-                <button
-                  type="button"
-                  class="btn-close"
-                  data-bs-dismiss="offcanvas"
-                  aria-label="Close"
-                ></button>
-              </div>
-              <div class="offcanvas-body">
-                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                  <li class="nav-item">Home</li>
-                  <li class="nav-item">Link</li>
+              <button
+                type="button"
+                class="d-flex justify-content-center align-items-center position-absolute border-0 rounded-3"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              >
+                <i class="fa-solid fa-x"></i>
+              </button>
+              <div class="nav-side-left h-100 d-flex justify-content-center align-items-center">
+                <ul class="w-100 px-5 m-0 d-flex flex-column gap-3">
+                  <li class="w-100 d-flex align-items-center justify-content-between px-3 rounded-1">
+                    Models
+                    <span><i class="fa-solid fa-angle-right"></i></span>
+                  </li>
+                  <li class="w-100 d-flex align-items-center justify-content-between px-3 rounded-1">
+                    Shopping Tools
+                    <span><i class="fa-solid fa-angle-right"></i></span>
+                  </li>
+                  <li class="w-100 d-flex align-items-center justify-content-between px-3 rounded-1">
+                    Porsche Shop
+                    <span><i class="fa-solid fa-angle-right"></i></span>
+                  </li>
+                  <li class="w-100 d-flex align-items-center justify-content-between px-3 rounded-1">
+                    Services
+                    <span><i class="fa-solid fa-angle-right"></i></span>
+                  </li>
+                  <li class="w-100 d-flex align-items-center justify-content-between px-3 rounded-1">
+                    Experience
+                    <span><i class="fa-solid fa-angle-right"></i></span>
+                  </li>
+                  <li class="w-100 d-flex align-items-center justify-content-between px-3 rounded-1">
+                    Porsche Center
+                    <span><i class="fa-solid fa-angle-right"></i></span>
+                  </li>
+                  <li class="w-100 d-flex align-items-center justify-content-between px-3 rounded-1">
+                    My Porsche
+                    <span><i class="fa-solid fa-angle-right"></i></span>
+                  </li>
                 </ul>
               </div>
+              <div class="nav-side-right h-100"></div>
             </div>
           </div>
         </nav>
@@ -91,7 +117,7 @@
           </div>
         </div>
       </div>
-      <video
+      <!-- <video
         class="w-100 h-100 object-fit-cover"
         src="Video/video.mp4"
         autoplay
@@ -99,34 +125,54 @@
         loop
         muted
         poster="Image/featureTop.jpg"
-      ></video>
+      ></video> -->
     </div>
 
     <!-- small banner feature -->
     <div
-      class="small-banner-container container-fluid row justify-content-center align-items-center"
+      class="small-banner-container m-0 container-fluid row justify-content-center align-items-center"
     >
       <div class="small-banner row gap-4 justify-content-center p-0">
         <div class="small-banner-item position-relative col-lg-3 p-0 col-12">
-          <div class="position-absolute small-banner-des w-100 h-100 d-flex justify-content-center align-items-end rounded-4 text-light pb-3">
-            <h1 class="fw-normal small-banner-title">Porsche Winter Accessories</h1>
+          <div
+            class="position-absolute small-banner-des w-100 h-100 d-flex justify-content-lg-center justify-content-between px-lg-0 px-3 align-items-end rounded-4 text-light pb-3"
+          >
+            <h1 class="fw-bold small-banner-title">
+              Porsche Winter Accessories.
+            </h1>
             <i class="fa-solid fa-arrow-right mb-2 ms-2 text-light"></i>
           </div>
-          <img class="img-fluid rounded-4" src="Image/featureTop.jpg" alt="" />
+          <img
+            class="img-fluid rounded-4"
+            src="Image/small-banner1.avif"
+            alt=""
+          />
         </div>
         <div class="small-banner-item position-relative col-lg-3 p-0 col-12">
-          <div class="position-absolute small-banner-des w-100 h-100 d-flex justify-content-center align-items-end rounded-4 text-light pb-3">
-            <h1 class="fw-normal small-banner-title">Porsche Winter Accessories</h1>
+          <div
+            class="position-absolute small-banner-des w-100 h-100 d-flex justify-content-lg-center justify-content-between px-lg-0 px-3 align-items-end rounded-4 text-light pb-3"
+          >
+            <h1 class="fw-bold small-banner-title">Daytona awaits Porsche.</h1>
             <i class="fa-solid fa-arrow-right mb-2 ms-2 text-light"></i>
           </div>
-          <img class="img-fluid rounded-4" src="Image/featureTop.jpg" alt="" />
+          <img
+            class="img-fluid rounded-4"
+            src="Image/small-banner2.avif"
+            alt=""
+          />
         </div>
         <div class="small-banner-item position-relative col-lg-3 p-0 col-12">
-          <div class="position-absolute small-banner-des w-100 h-100 d-flex justify-content-center align-items-end rounded-4 text-light pb-3">
-            <h1 class="fw-normal small-banner-title">Porsche Winter Accessories</h1>
+          <div
+            class="position-absolute small-banner-des w-100 h-100 d-flex justify-content-lg-center justify-content-between px-lg-0 px-3 align-items-end rounded-4 text-light pb-3"
+          >
+            <h1 class="fw-bold small-banner-title">The new 911 Carrera S.</h1>
             <i class="fa-solid fa-arrow-right mb-2 ms-2 text-light"></i>
           </div>
-          <img class="img-fluid rounded-4" src="Image/featureTop.jpg" alt="" />
+          <img
+            class="img-fluid rounded-4"
+            src="Image/small-banner3.avif"
+            alt=""
+          />
         </div>
       </div>
     </div>
