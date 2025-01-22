@@ -1,24 +1,27 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-*{
+* {
   font-family: "Poppins";
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box !important;
 }
 ::-webkit-scrollbar {
   display: none;
 }
 /* feature part */
-.feature-container{
+.feature-container {
   cursor: pointer;
 }
 .feature-container .feature-content {
   background-color: rgba(0, 0, 0, 0.6);
   z-index: 10;
 }
-.feature-container .feature-content .navbar{
+.feature-container .feature-content .navbar {
   height: 10%;
 }
 .feature-container .feature-content .navbar .container-fluid {
-  display: flex; 
+  display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   height: fit-content;
@@ -27,33 +30,33 @@
   border: none;
 }
 .feature-container
-.feature-content
-.navbar
-.container-fluid
-.navbar-toggler:hover {
+  .feature-content
+  .navbar
+  .container-fluid
+  .navbar-toggler:hover {
   background-color: rgba(0, 0, 0, 0.3);
 }
 .feature-container .feature-content .navbar .container-fluid .navbar-logo {
   width: 250px;
   height: 60px;
 }
-.feature-container .feature-content .content{
+.feature-container .feature-content .content {
   width: 100%;
   height: 90%;
   position: relative;
 }
-.feature-container .feature-content .content .des{
+.feature-container .feature-content .content .des {
   width: 400px;
   height: fit-content;
   bottom: 150px;
   left: 50px;
   position: absolute;
 }
-.feature-container .feature-content .content .des h1{
+.feature-container .feature-content .content .des h1 {
   color: white;
   font-size: 70px;
 }
-.feature-container .feature-content .content .des button{
+.feature-container .feature-content .content .des button {
   width: 100%;
   height: 50px;
   border: 2.5px solid white;
@@ -61,17 +64,17 @@
   font-size: 18px;
   color: white;
   background-color: transparent;
-  transition: .2s ease;
+  transition: 0.2s ease;
 }
 
 .feature-container .feature-content .content .pause:hover,
 .feature-container .feature-content .content .sound:hover,
-.feature-container .feature-content .content .des button:hover{
+.feature-container .feature-content .content .des button:hover {
   background-color: rgba(207, 207, 207, 0.378);
   border: 2.5px solid rgb(207, 207, 207);
 }
 .feature-container .feature-content .content .pause,
-.feature-container .feature-content .content .sound{
+.feature-container .feature-content .content .sound {
   width: 50px;
   height: 50px;
   border: 2.5px solid white;
@@ -81,7 +84,42 @@
   bottom: 10px;
   justify-content: center;
   align-items: center;
+  font-size: 25px;
 }
-.feature-container .feature-content .content .sound{
+.feature-container .feature-content .content .sound {
   right: 80px;
+}
+
+.small-banner-container {
+  margin-top: 80px;
+}
+.small-banner-container .small-banner {
+  width: 100%;
+  height: fit-content;
+}
+.small-banner-container .small-banner .small-banner-item {
+  cursor: pointer;
+}
+.small-banner-container .small-banner .small-banner-item .small-banner-des {
+  background-color: rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  transition: 0.3s ease-in-out;
+}
+.small-banner-container
+  .small-banner
+  .small-banner-item
+  .small-banner-des
+  .small-banner-title {
+  font-size: 15px;
+}
+.small-banner-container .small-banner .small-banner-item img {
+  transition: 0.3s ease-in-out;
+  z-index: 0;
+}
+.small-banner-container .small-banner .small-banner-item:hover img,
+.small-banner-container
+  .small-banner
+  .small-banner-item:hover
+  .small-banner-des {
+  transform: scale(103%);
 }
