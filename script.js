@@ -47,7 +47,7 @@ if (
   VideoBtnMute.classList.add("d-none");
 }
 
-//side submenu open close
+//side submenu to open/close
 const SideMenuLeft = document.querySelector(
   ".feature-container .feature-content .navbar .container-fluid .side-menu-container .nav-side-left"
 );
@@ -63,8 +63,7 @@ const SideMenuRightCloseBtn = document.querySelectorAll(
 SideMenuLeftLi.forEach((item, index) => {
   item.addEventListener("click", () => {
     item.classList.add("active-sidemenu-left");
-    SideMenuRight[index].style.cssText = `transform: translateX(0);
-  z-index: 2;`;
+    SideMenuRight[index].style.cssText = `transform: translateX(0);`;
     SideMenuLeftLi.forEach((removeStyle, removeIndex) => {
       if (index != removeIndex) {
         removeStyle.classList.remove("active-sidemenu-left");

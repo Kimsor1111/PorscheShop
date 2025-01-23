@@ -92,6 +92,7 @@
     background-color: white;
     padding: 20px;
     transition: all 0.5s ease;
+    z-index: 1;
   }
   .feature-container
     .feature-content
@@ -108,7 +109,7 @@
     .side-menu-container
     .nav-side-right
     .nav-side-right-item
-    ul.list-image ,
+    ul.list-image,
   .feature-container
     .feature-content
     .navbar
@@ -116,7 +117,7 @@
     .side-menu-container
     .nav-side-right
     .nav-side-right-item
-    ul.list-menu{
+    ul.list-menu {
     padding: 20px 0;
   }
 
