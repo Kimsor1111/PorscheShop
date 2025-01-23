@@ -16,6 +16,17 @@
     .side-menu-container {
     width: 90%;
   }
+  .feature-container
+    .feature-content
+    .navbar
+    .container-fluid
+    .side-menu-container
+    .nav-side-right
+    .nav-side-right-item
+    ul
+    li {
+    width: 70%;
+  }
 }
 
 /*Small devices (landscape phones, 576px and up)*/
@@ -23,6 +34,7 @@
   .feature-container .feature-content .navbar {
     height: 15%;
   }
+
   .feature-container
     .feature-content
     .navbar
@@ -31,20 +43,107 @@
     width: 100%;
   }
   .feature-container
-  .feature-content
-  .navbar
-  .container-fluid
-  .side-menu-container
-  .nav-side-left,
-.feature-container
-  .feature-content
-  .navbar
-  .container-fluid
-  .side-menu-container
-  .nav-side-right{
+    .feature-content
+    .navbar
+    .container-fluid
+    .side-menu-container
+    .nav-side-left
+    button {
+    top: 0;
+    right: 10px;
+  }
+  .feature-container
+    .feature-content
+    .navbar
+    .container-fluid
+    .side-menu-container
+    .nav-side-left
+    button
+    i {
+    color: black;
+  }
+  .feature-container
+    .feature-content
+    .navbar
+    .container-fluid
+    .side-menu-container
+    .nav-side-left,
+  .feature-container
+    .feature-content
+    .navbar
+    .container-fluid
+    .side-menu-container
+    .nav-side-right {
     width: 100%;
     position: absolute;
   }
+  .feature-container
+    .feature-content
+    .navbar
+    .container-fluid
+    .side-menu-container
+    .nav-side-right {
+    /* transform: translateX(100%); */
+    background-color: white;
+  }
+
+  .feature-container
+    .feature-content
+    .navbar
+    .container-fluid
+    .side-menu-container
+    .nav-side-left
+    ul.list-image
+    li {
+    height: 50px;
+  }
+  .feature-container
+    .feature-content
+    .navbar
+    .container-fluid
+    .side-menu-container
+    .nav-side-right
+    .nav-side-right-item
+    ul.list-image
+    li {
+    background-color: white;
+    width: 300px;
+  }
+  .feature-container
+    .feature-content
+    .navbar
+    .container-fluid
+    .side-menu-container
+    .nav-side-right
+    .nav-side-right-item
+    ul.list-image
+    li:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+
+  .feature-container
+    .feature-content
+    .navbar
+    .container-fluid
+    .side-menu-container
+    .nav-side-right
+    .nav-side-right-item
+    ul.list-menu
+    li {
+    background-color: white;
+  }
+  .feature-container
+    .feature-content
+    .navbar
+    .container-fluid
+    .side-menu-container
+    .nav-side-right
+    .nav-side-right-item
+    ul.list-menu
+    li:hover {
+    background-color: rgb(199, 199, 199);
+  }
+  /* title btn */
   .feature-container .feature-content .content {
     height: 85%;
   }
