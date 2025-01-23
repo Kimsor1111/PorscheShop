@@ -4,19 +4,19 @@
   font-family: "Noto sans";
   box-sizing: border-box !important;
 }
-button {
-  font-family: "Poppins";
-}
 ::-webkit-scrollbar {
   display: none;
 }
-/* feature part */
-.feature-container {
-  cursor: pointer;
+button {
+  font-family: "Poppins" !important;
+  cursor: pointer !important;
 }
-/* feature contains navbar and sidemenu */
+li {
+  cursor: pointer !important;
+}
+/* feature part */
 .feature-container .feature-content {
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.4);
   z-index: 10;
 }
 /* navbar contains navbar and sidemenu */
@@ -57,13 +57,7 @@ button {
   .navbar
   .container-fluid
   .side-menu-container
-  .nav-side-left,
-.feature-container
-  .feature-content
-  .navbar
-  .container-fluid
-  .side-menu-container
-  .nav-side-right {
+  .nav-side-left {
   width: 50%;
 }
 .feature-container
@@ -108,7 +102,8 @@ button {
   .nav-side-left
   ul {
   list-style: none;
-  height: fit-content;
+  padding: 70px 0;
+  height: 100%;
 }
 .feature-container
   .feature-content
@@ -119,7 +114,7 @@ button {
   ul
   li {
   width: 100%;
-  height: 65px;
+  height: 70px;
   font-size: 20px;
 }
 .feature-container
@@ -129,18 +124,56 @@ button {
   .side-menu-container
   .nav-side-left
   ul
-  li:hover {
-  background-color: rgba(0, 0, 0, 0.18);
+  li.active-sidemenu-left {
+  background-color: rgba(0, 0, 0, 0.2);
 }
 .feature-container
   .feature-content
   .navbar
   .container-fluid
   .side-menu-container
-  .nav-side-right {
-  background-color: rgb(199, 199, 199);
-  right: 0;
+  .nav-side-left
+  ul
+  li:hover,
+.feature-container
+  .feature-content
+  .navbar
+  .container-fluid
+  .side-menu-container
+  .nav-side-left
+  ul
+  li.active-sidemenu-left:hover {
+  background-color: rgba(0, 0, 0, 0.2);
 }
+/* sidemenu right */
+.feature-container
+  .feature-content
+  .navbar
+  .container-fluid
+  .side-menu-container
+  .nav-side-right {
+  background-color: rgb(230, 230, 230);
+  right: 0;
+  width: 50%;
+  transition: 0.3s ease;
+}
+.feature-container
+  .feature-content
+  .navbar
+  .container-fluid
+  .side-menu-container
+  .nav-side-right.active-sidemenu-right {
+  transform: translateX(0%);
+}
+.feature-container
+  .feature-content
+  .navbar
+  .container-fluid
+  .side-menu-container
+  .nav-side-right.inactive-sidemenu-right {
+  transform: translateX(-200%);
+}
+/* sidemenu image */
 .feature-container
   .feature-content
   .navbar
@@ -173,7 +206,7 @@ button {
   li {
   width: 60%;
   height: 200px;
-  background-color: rgb(199, 199, 199);
+  background-color: rgb(230, 230, 230);
   border-radius: 10px;
   transition: 0.3s ease;
 }
@@ -216,6 +249,7 @@ button {
   img {
   transform: translateX(20px);
 }
+/* sidemenu list menu text */
 .feature-container
   .feature-content
   .navbar
@@ -237,7 +271,7 @@ button {
   li {
   width: 90%;
   height: 70px;
-  background-color: rgb(199, 199, 199);
+  background-color: rgb(230, 230, 230);
   border-radius: 5px;
   transition: 0.3s ease;
   font-size: 20px;
@@ -259,6 +293,7 @@ button {
   width: 100%;
   height: 90%;
   position: relative;
+  cursor: pointer;
 }
 .feature-container .feature-content .content .des {
   width: 400px;
