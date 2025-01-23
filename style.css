@@ -59,6 +59,7 @@ li {
   .side-menu-container
   .nav-side-left {
   width: 50%;
+  z-index: 1;
 }
 .feature-container
   .feature-content
@@ -153,9 +154,10 @@ li {
   .side-menu-container
   .nav-side-right {
   background-color: rgb(230, 230, 230);
+  transform: translateX(-100%);
   right: 0;
   width: 50%;
-  transition: 0.3s ease;
+  transition: transform 0.5s ease;
 }
 .feature-container
   .feature-content
@@ -164,14 +166,7 @@ li {
   .side-menu-container
   .nav-side-right.active-sidemenu-right {
   transform: translateX(0%);
-}
-.feature-container
-  .feature-content
-  .navbar
-  .container-fluid
-  .side-menu-container
-  .nav-side-right.inactive-sidemenu-right {
-  transform: translateX(-200%);
+  z-index: 2;
 }
 /* sidemenu image */
 .feature-container

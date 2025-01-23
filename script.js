@@ -38,6 +38,7 @@ VideoBtnMute.addEventListener("click", () => {
     isMute = true;
   }
 });
+//check if it is the apple device
 if (
   /iPad|iPhone|iPod/.test(navigator.userAgent) ||
   (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1)
@@ -45,3 +46,40 @@ if (
   VideoBtnPause.classList.add("d-none");
   VideoBtnMute.classList.add("d-none");
 }
+
+//side submenu open close
+const SideMenuLeft = document.querySelector(
+  ".feature-container .feature-content .navbar .container-fluid .side-menu-container .nav-side-left"
+);
+const SideMenuLeftLi = document.querySelectorAll(
+  `.feature-container .feature-content .navbar .container-fluid .side-menu-container .nav-side-left ul li`
+);
+const SideMenuRight = document.querySelectorAll(
+  `.feature-container .feature-content .navbar .container-fluid .side-menu-container .nav-side-right`
+);
+const SideMenuRightCloseBtn = document.querySelectorAll(
+  `.feature-container .feature-content .navbar .container-fluid .side-menu-container .nav-side-right .nav-side-right-item button`
+);
+SideMenuLeftLi.forEach((item, index) => {
+  item.addEventListener("click", () => {
+    item.classList.add("active-sidemenu-left");
+    SideMenuRight[index].style.cssText = `transform: translateX(0);
+  z-index: 2;`;
+    SideMenuLeftLi.forEach((removeStyle, removeIndex) => {
+      if (index != removeIndex) {
+        removeStyle.classList.remove("active-sidemenu-left");
+        SideMenuRight[
+          removeIndex
+        ].style.cssText = `transform: translateX(-100%);
+  z-index: 0;`;
+      }
+    });
+  });
+});
+
+SideMenuRightCloseBtn.forEach((btn, index) => {
+  btn.addEventListener("click", () => {
+    SideMenuRight[index].style.cssText = `transform: translateX(-100%);
+  z-index: 0;`;
+  });
+});
