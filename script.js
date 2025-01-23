@@ -58,8 +58,10 @@ const SideMenuRight = document.querySelectorAll(
   `.feature-container .feature-content .navbar .container-fluid .side-menu-container .nav-side-right`
 );
 const SideMenuRightCloseBtn = document.querySelectorAll(
-  `.feature-container .feature-content .navbar .container-fluid .side-menu-container .nav-side-right .nav-side-right-item button`
+  `.feature-container .feature-content .navbar .container-fluid .side-menu-container .nav-side-right .nav-side-right-item button.btn`
 );
+console.log(SideMenuRight);
+console.log(SideMenuRightCloseBtn);
 SideMenuLeftLi.forEach((item, index) => {
   item.addEventListener("click", () => {
     item.classList.add("active-sidemenu-left");

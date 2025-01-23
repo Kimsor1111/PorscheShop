@@ -197,6 +197,17 @@ li {
   .side-menu-container
   .nav-side-right
   .nav-side-right-item
+  ul
+  li:last-child {
+  margin-bottom: 50px;
+}
+.feature-container
+  .feature-content
+  .navbar
+  .container-fluid
+  .side-menu-container
+  .nav-side-right
+  .nav-side-right-item
   ul.list-image
   li {
   width: 60%;
@@ -281,6 +292,163 @@ li {
   ul.list-menu
   li:hover {
   background-color: white;
+}
+
+/* sidemenu input zip */
+.feature-container
+  .feature-content
+  .navbar
+  .container-fluid
+  .side-menu-container
+  .nav-side-right
+  .nav-side-right-item
+  .input-form {
+  padding: 70px 0;
+  width: 90%;
+  height: fit-content;
+}
+.feature-container
+  .feature-content
+  .navbar
+  .container-fluid
+  .side-menu-container
+  .nav-side-right
+  .nav-side-right-item
+  .input-form
+  .input {
+  height: 50px;
+}
+.feature-container
+  .feature-content
+  .navbar
+  .container-fluid
+  .side-menu-container
+  .nav-side-right
+  .nav-side-right-item
+  .input-form
+  .input
+  input {
+  padding-inline: 10px 50px;
+  outline: none;
+  border: 2px solid gray;
+  transition: 0.2s;
+}
+.feature-container
+  .feature-content
+  .navbar
+  .container-fluid
+  .side-menu-container
+  .nav-side-right
+  .nav-side-right-item
+  .input-form
+  .input
+  input:hover,
+.feature-container
+  .feature-content
+  .navbar
+  .container-fluid
+  .side-menu-container
+  .nav-side-right
+  .nav-side-right-item
+  .input-form
+  .input
+  input:focus {
+  border: 2px solid black;
+}
+.feature-container
+  .feature-content
+  .navbar
+  .container-fluid
+  .side-menu-container
+  .nav-side-right
+  .nav-side-right-item
+  .input-form
+  button {
+  height: 50px;
+  border: 2px solid black;
+  transition: 0.1s;
+}
+.feature-container
+  .feature-content
+  .navbar
+  .container-fluid
+  .side-menu-container
+  .nav-side-right
+  .nav-side-right-item
+  .input-form
+  button:hover {
+  border: 2px solid gray;
+  background-color: rgb(226, 226, 226);
+}
+
+/* submenu my porsche */
+.feature-container
+  .feature-content
+  .navbar
+  .container-fluid
+  .side-menu-container
+  .nav-side-right
+  .nav-side-right-item
+  ul
+  .btn-porsche
+  button {
+  width: fit-content;
+  padding-inline: 20px;
+  border: none;
+  height: 100%;
+  font-weight: 500;
+}
+.feature-container
+  .feature-content
+  .navbar
+  .container-fluid
+  .side-menu-container
+  .nav-side-right
+  .nav-side-right-item
+  ul
+  .btn-porsche
+  button.login {
+  background-color: black;
+  color: white;
+  transition: 0.2s;
+}
+.feature-container
+  .feature-content
+  .navbar
+  .container-fluid
+  .side-menu-container
+  .nav-side-right
+  .nav-side-right-item
+  ul
+  .btn-porsche
+  button.login:hover {
+  background-color: rgb(70, 70, 70);
+}
+.feature-container
+  .feature-content
+  .navbar
+  .container-fluid
+  .side-menu-container
+  .nav-side-right
+  .nav-side-right-item
+  ul
+  .btn-porsche
+  button.discover {
+  background-color: transparent;
+  border: 2px solid black;
+  transition: 0.2s;
+}
+.feature-container
+  .feature-content
+  .navbar
+  .container-fluid
+  .side-menu-container
+  .nav-side-right
+  .nav-side-right-item
+  ul
+  .btn-porsche
+  button.discover:hover {
+  background-color: rgb(211, 211, 211);
 }
 
 /* title btn video */

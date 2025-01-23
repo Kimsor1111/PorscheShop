@@ -91,7 +91,7 @@
     position: absolute;
     background-color: white;
     padding: 20px;
-    transition: all 0.5s ease;
+    transition: all 0.5s ease !important;
     z-index: 1;
   }
   .feature-container
@@ -166,6 +166,19 @@
     li:hover {
     background-color: rgb(230, 230, 230);
   }
+
+  .feature-container
+  .feature-content
+  .navbar
+  .container-fluid
+  .side-menu-container
+  .nav-side-right
+  .nav-side-right-item
+  ul
+  .btn-porsche
+  button {
+  width: 50%;
+}
   /* title btn */
   .feature-container .feature-content .content {
     height: 85%;
