@@ -5,13 +5,26 @@ body{
     font-weight: 500;
     font-style: normal;
 }
+
 h2{
     font-size: 50px;
+    background-image: url('/assets/flam.gif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-clip: text;
+    backdrop-filter: 10px;
+    color: transparent;
 }
 .card {
     border: none;
     overflow: hidden;
     cursor: pointer;
+    width: 100%;
+    height: 100%;
+    background-color: red !important;
+    position: relative;
+    z-index: 2;
 }
 .card:hover .image{
   transform: scale(1.05);
@@ -23,22 +36,13 @@ h2{
 
 
 .image {
+    position: relative;
     width: 100%;
     height: auto;
     border-radius: 0.5rem;
     transition: all 0.5s;
 }
 
-/* .image-overlay :nth-child(2) {
-    position: absolute;
-    top: 20px;
-    left: 15px;
-    width: 20%;
-    height: 5%;
-    font-weight: bold;
-    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
-    filter: invert(1);
-} */
 .overlay-number{
     position: absolute;
     top: 20px;
@@ -57,9 +61,6 @@ h2{
     height: 5%;
     font-weight: bold;
     filter: invert(1);
-}
-.image{
-    background-color: red;
 }
 
 .overlay-badge {
