@@ -13,7 +13,7 @@ h2{
     overflow: hidden;
     cursor: pointer;
 }
-.card:hover img{
+.card:hover .image{
   transform: scale(1.05);
 }
 
