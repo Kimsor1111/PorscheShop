@@ -168,17 +168,17 @@
   }
 
   .feature-container
-  .feature-content
-  .navbar
-  .container-fluid
-  .side-menu-container
-  .nav-side-right
-  .nav-side-right-item
-  ul
-  .btn-porsche
-  button {
-  width: 50%;
-}
+    .feature-content
+    .navbar
+    .container-fluid
+    .side-menu-container
+    .nav-side-right
+    .nav-side-right-item
+    ul
+    .btn-porsche
+    button {
+    width: 50%;
+  }
   /* title btn */
   .feature-container .feature-content .content {
     height: 85%;

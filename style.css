@@ -512,18 +512,14 @@ li {
 }
 .small-banner-container .small-banner .small-banner-item {
   cursor: pointer;
+  overflow: hidden;
+  border-radius: 20px;
 }
 .small-banner-container .small-banner .small-banner-item .small-banner-des {
   padding: 5px;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
   z-index: 1;
   transition: 0.3s ease-in-out;
-}
-.small-banner-container
-  .small-banner
-  .small-banner-item:hover
-  .small-banner-des {
-  background-color: rgba(0, 0, 0, 0.3);
 }
 .small-banner-container
   .small-banner
@@ -536,4 +532,7 @@ li {
   transition: 0.3s ease-in-out;
   z-index: 0;
   border-radius: 20px;
+}
+.small-banner-container .small-banner .small-banner-item:hover img {
+  transform: scale(1.05);
 }
