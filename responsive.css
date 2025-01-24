@@ -6,207 +6,127 @@
 }
 /*Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) and (max-width: 991.98px) {
-  .small-banner-container .small-banner {
-    width: 70%;
+  .feature-container {
+    .feature-content {
+      .navbar {
+        .container-fluid {
+          .side-menu-container {
+            width: 90%;
+            .nav-side-right {
+              .nav-side-right-item {
+                ul {
+                  li {
+                    width: 70%;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
   }
-  .feature-container
-    .feature-content
-    .navbar
-    .container-fluid
-    .side-menu-container {
-    width: 90%;
-  }
-  .feature-container
-    .feature-content
-    .navbar
-    .container-fluid
-    .side-menu-container
-    .nav-side-right
-    .nav-side-right-item
-    ul
-    li {
-    width: 70%;
+  .small-banner-container {
+    .small-banner {
+      width: 70%;
+    }
   }
 }
 
 /*Small devices (landscape phones, 576px and up)*/
 @media (max-width: 767.98px) {
-  .feature-container .feature-content .navbar {
-    height: 15%;
+  .feature-container {
+    .feature-content {
+      .navbar {
+        height: 15%;
+        .container-fluid {
+          .side-menu-container {
+            width: 100%;
+            .nav-side-left {
+              width: 100%;
+              position: absolute;
+              button {
+                top: 15px;
+                right: 10px;
+                i {
+                  color: black !important;
+                }
+              }
+              ul {
+                li.active-sidemenu-left {
+                  background-color: transparent;
+                }
+              }
+            }
+            .nav-side-right {
+              width: 100%;
+              position: absolute;
+              background-color: white;
+              padding: 20px;
+              transition: all 0.5s linear !important;
+              z-index: 1;
+              .nav-side-right-item {
+                ul.list-image {
+                  padding: 20px 0;
+                  li {
+                    background-color: white;
+                    width: 350px;
+                  }
+                  li:hover {
+                    background-color: rgba(0, 0, 0, 0.2);
+                  }
+                }
+                ul.list-menu {
+                  padding: 20px 0;
+                  li {
+                    background-color: white;
+                  }
+                  li:hover {
+                    background-color: rgb(230, 230, 230);
+                  }
+                }
+                ul .btn-porsche button {
+                  width: 50%;
+                }
+              }
+            }
+            .nav-side-right.active-sidemenu-right {
+              transform: translateX(-100%);
+            }
+          }
+        }
+      }
+      .content {
+        height: 85%;
+        .des {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          padding-inline: 10px;
+          bottom: 90px;
+          left: 0;
+          h1 {
+            text-align: center;
+            font-size: 50px;
+          }
+        }
+        .sound,
+        .pause {
+          width: 35px;
+          height: 35px;
+          font-size: 18px;
+        }
+        .sound {
+          right: 60px;
+        }
+      }
+    }
   }
-
-  .feature-container
-    .feature-content
-    .navbar
-    .container-fluid
-    .side-menu-container {
-    width: 100%;
-  }
-  .feature-container
-    .feature-content
-    .navbar
-    .container-fluid
-    .side-menu-container
-    .nav-side-left
-    button {
-    top: 15px;
-    right: 10px;
-  }
-  .feature-container
-    .feature-content
-    .navbar
-    .container-fluid
-    .side-menu-container
-    .nav-side-left
-    button
-    i {
-    color: black;
-  }
-  .feature-container
-    .feature-content
-    .navbar
-    .container-fluid
-    .side-menu-container
-    .nav-side-left {
-    width: 100%;
-    position: absolute;
-  }
-  .feature-container
-    .feature-content
-    .navbar
-    .container-fluid
-    .side-menu-container
-    .nav-side-left
-    ul
-    li.active-sidemenu-left {
-    background-color: transparent;
-  }
-  .feature-container
-    .feature-content
-    .navbar
-    .container-fluid
-    .side-menu-container
-    .nav-side-right {
-    width: 100%;
-    position: absolute;
-    background-color: white;
-    padding: 20px;
-    transition: all .5s linear !important;
-    z-index: 1;
-  }
-  .feature-container
-    .feature-content
-    .navbar
-    .container-fluid
-    .side-menu-container
-    .nav-side-right.active-sidemenu-right {
-    transform: translateX(-100%);
-  }
-  .feature-container
-    .feature-content
-    .navbar
-    .container-fluid
-    .side-menu-container
-    .nav-side-right
-    .nav-side-right-item
-    ul.list-image,
-  .feature-container
-    .feature-content
-    .navbar
-    .container-fluid
-    .side-menu-container
-    .nav-side-right
-    .nav-side-right-item
-    ul.list-menu {
-    padding: 20px 0;
-  }
-
-  .feature-container
-    .feature-content
-    .navbar
-    .container-fluid
-    .side-menu-container
-    .nav-side-right
-    .nav-side-right-item
-    ul.list-image
-    li {
-    background-color: white;
-    width: 300px;
-  }
-  .feature-container
-    .feature-content
-    .navbar
-    .container-fluid
-    .side-menu-container
-    .nav-side-right
-    .nav-side-right-item
-    ul.list-image
-    li:hover {
-    background-color: rgba(0, 0, 0, 0.2);
-  }
-  .feature-container
-    .feature-content
-    .navbar
-    .container-fluid
-    .side-menu-container
-    .nav-side-right
-    .nav-side-right-item
-    ul.list-menu
-    li {
-    background-color: white;
-  }
-  .feature-container
-    .feature-content
-    .navbar
-    .container-fluid
-    .side-menu-container
-    .nav-side-right
-    .nav-side-right-item
-    ul.list-menu
-    li:hover {
-    background-color: rgb(230, 230, 230);
-  }
-
-  .feature-container
-    .feature-content
-    .navbar
-    .container-fluid
-    .side-menu-container
-    .nav-side-right
-    .nav-side-right-item
-    ul
-    .btn-porsche
-    button {
-    width: 50%;
-  }
-  /* title btn */
-  .feature-container .feature-content .content {
-    height: 85%;
-  }
-  .feature-container .feature-content .content .des {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-inline: 10px;
-    bottom: 90px;
-    left: 0;
-  }
-  .feature-container .feature-content .content .des h1 {
-    text-align: center;
-    font-size: 50px;
-  }
-  .feature-container .feature-content .content .pause,
-  .feature-container .feature-content .content .sound {
-    width: 35px;
-    height: 35px;
-    font-size: 18px;
-  }
-  .feature-container .feature-content .content .sound {
-    right: 60px;
-  }
-  .small-banner-container .small-banner {
-    width: 80%;
+  .small-banner-container {
+    .small-banner {
+      width: 70%;
+    }
   }
 }
 
