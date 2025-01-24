@@ -11,7 +11,7 @@ h2{
 .card {
     border: none;
     overflow: hidden;
-    transition: all 0.4s;
+    cursor: pointer;
 }
 .card:hover img{
   transform: scale(1.05);
@@ -21,22 +21,45 @@ h2{
     position: relative;
 }
 
-.image-overlay .image {
+
+.image {
     width: 100%;
     height: auto;
     border-radius: 0.5rem;
     transition: all 0.5s;
 }
-.image-overlay :nth-child(2) {
+
+/* .image-overlay :nth-child(2) {
     position: absolute;
     top: 20px;
     left: 15px;
-    width: 10rem;
-    height: 3rem;
+    width: 20%;
+    height: 5%;
     font-weight: bold;
     text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
     filter: invert(1);
-
+} */
+.overlay-number{
+    position: absolute;
+    top: 20px;
+    left: 15px;
+    width: 20%;
+    height: 5%;
+    font-weight: bold;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+    filter: invert(1);
+}
+.overlay-title{
+    position: absolute;
+    top: 20px;
+    left: 15px;
+    width: 50%;
+    height: 5%;
+    font-weight: bold;
+    filter: invert(1);
+}
+.image{
+    background-color: red;
 }
 
 .overlay-badge {
