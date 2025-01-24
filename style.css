@@ -97,7 +97,7 @@ h2{
     width: 100%;
     color: white;
     border-color: white;
-    transition: all 0.3s;
+    transition: all 0.5s ease-in-out;
     
 }
 
