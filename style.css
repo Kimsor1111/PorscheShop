@@ -238,9 +238,12 @@ h1 {
       height: fit-content;
       margin-top: 40px;
       .img {
-        width: 20%;
+        width: 30%;
         margin-bottom: 20px;
         height: auto;
+      }
+      .img.letter {
+        width: 50%;
       }
       .btn-container {
         width: 70%;

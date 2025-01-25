@@ -83,7 +83,7 @@ SideMenuRightCloseBtn.forEach((btn, index) => {
 
 //model side submenu to open/close
 const SideMenuLeftLiModel = document.querySelectorAll(
-  `.side-menu-container-model .nav-side-left ul li.list-model`
+  `.side-menu-container-model .nav-side-left ul li`
 );
 const SideMenuRightModel = document.querySelectorAll(
   `.side-menu-container-model .nav-side-right`

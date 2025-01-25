@@ -502,7 +502,9 @@
       aria-labelledby="offcanvasModeldetailLabel"
     >
       <!-- Nav sidemenu left -->
-      <div class="nav-side-left h-100 d-flex justify-content-center bg-light">
+      <div
+        class="nav-side-left h-100 d-flex flex-column justify-content-center bg-light"
+      >
         <button
           type="button"
           class="d-md-flex d-none justify-content-center align-items-center position-absolute border-0 rounded-3"
@@ -511,21 +513,19 @@
         >
           <i class="fa-solid fa-x"></i>
         </button>
+        <button
+          class="btn border-0 position-absolute ms-5"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+          aria-label="Close"
+          style="left: 0"
+        >
+          <i class="fa-solid fa-arrow-left fs-4"></i>
+        </button>
         <ul class="w-100 px-5 m-0 d-flex flex-column gap-1">
           <li
-            class="btn-arrow d-flex align-items-center justify-content-center rounded-1"
-            data-bs-toggle="offcanvas"
-            data-bs-target="#offcanvasNavbar"
-            aria-controls="offcanvasNavbar"
-            aria-label="Close"
-          >
-            <button class="border-0">
-              <i class="fa-solid fs-3 fa-arrow-left"></i>
-            </button>
-            Models
-          </li>
-          <li
-            class="list-model w-100 d-flex align-items-center justify-content-between px-3 rounded-1"
+            class="w-100 d-flex align-items-center justify-content-between px-3 rounded-1"
           >
             <div class="d-flex flex-column">
               718
@@ -538,7 +538,7 @@
             <span><i class="fa-solid fa-angle-right"></i></span>
           </li>
           <li
-            class="list-model w-100 d-flex align-items-center justify-content-between px-3 rounded-1"
+            class="w-100 d-flex align-items-center justify-content-between px-3 rounded-1"
           >
             <div class="d-flex flex-column">
               911
@@ -551,7 +551,7 @@
             <span><i class="fa-solid fa-angle-right"></i></span>
           </li>
           <li
-            class="list-model w-100 d-flex align-items-center justify-content-between px-3 rounded-1"
+            class="w-100 d-flex align-items-center justify-content-between px-3 rounded-1"
           >
             <div class="d-flex flex-column">
               Taycan
@@ -564,7 +564,7 @@
             <span><i class="fa-solid fa-angle-right"></i></span>
           </li>
           <li
-            class="list-model w-100 d-flex align-items-center justify-content-between px-3 rounded-1"
+            class="w-100 d-flex align-items-center justify-content-between px-3 rounded-1"
           >
             <div class="d-flex flex-column">
               Panamera
@@ -577,7 +577,7 @@
             <span><i class="fa-solid fa-angle-right"></i></span>
           </li>
           <li
-            class="list-model w-100 d-flex align-items-center justify-content-between px-3 rounded-1"
+            class="w-100 d-flex align-items-center justify-content-between px-3 rounded-1"
           >
             <div class="d-flex flex-column">
               Macan
@@ -590,7 +590,7 @@
             <span><i class="fa-solid fa-angle-right"></i></span>
           </li>
           <li
-            class="list-model w-100 d-flex align-items-center justify-content-between px-3 rounded-1"
+            class="w-100 d-flex align-items-center justify-content-between px-3 rounded-1"
           >
             <div class="d-flex flex-column">
               Cayenne
@@ -858,7 +858,7 @@
           <i class="fa-solid fa-arrow-left fs-4"></i>
         </button>
         <div class="header-model w-100 d-flex align-items-center flex-column">
-          <div class="img">
+          <div class="img letter">
             <img src="asset/Image/taycan.svg" alt="" />
           </div>
           <div class="btn-container">
@@ -982,7 +982,7 @@
           <i class="fa-solid fa-arrow-left fs-4"></i>
         </button>
         <div class="header-model w-100 d-flex align-items-center flex-column">
-          <div class="img">
+          <div class="img letter">
             <img src="asset/Image/panamera.svg" alt="" />
           </div>
           <div class="btn-container">
@@ -1106,7 +1106,7 @@
           <i class="fa-solid fa-arrow-left fs-4"></i>
         </button>
         <div class="header-model w-100 d-flex align-items-center flex-column">
-          <div class="img">
+          <div class="img letter">
             <img src="asset/Image/macan.svg" alt="" />
           </div>
           <div class="btn-container">
@@ -1230,7 +1230,7 @@
           <i class="fa-solid fa-arrow-left fs-4"></i>
         </button>
         <div class="header-model w-100 d-flex align-items-center flex-column">
-          <div class="img">
+          <div class="img letter">
             <img src="asset/Image/cayenne.svg" alt="" />
           </div>
           <div class="btn-container">
