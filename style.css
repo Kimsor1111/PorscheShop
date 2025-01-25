@@ -11,6 +11,9 @@ button {
   font-family: "Poppins" !important;
   cursor: pointer !important;
 }
+button.btn {
+  color: black !important;
+}
 li {
   cursor: pointer !important;
 }
