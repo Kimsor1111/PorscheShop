@@ -11,9 +11,6 @@ button {
   font-family: "Poppins" !important;
   cursor: pointer !important;
 }
-button.btn {
-  color: black !important;
-}
 li {
   cursor: pointer !important;
 }
@@ -142,6 +139,7 @@ h1 {
           height: 50px;
           border: 2px solid black;
           transition: 0.1s;
+          color: black !important;
         }
         button:hover {
           border: 2px solid gray;
@@ -254,6 +252,7 @@ h1 {
           height: 50px;
           border: 2px solid black;
           transition: 0.1s;
+          color: black !important;
         }
         button:hover {
           border: 2px solid gray;
