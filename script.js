@@ -47,21 +47,17 @@ if (
   VideoBtnMute.classList.add("d-none");
 }
 
-//side submenu to open/close
-const SideMenuLeft = document.querySelector(
-  ".feature-container .feature-content .navbar .container-fluid .side-menu-container .nav-side-left"
-);
+//main side submenu to open/close
+
 const SideMenuLeftLi = document.querySelectorAll(
-  `.feature-container .feature-content .navbar .container-fluid .side-menu-container .nav-side-left ul li`
+  `.side-menu-container .nav-side-left ul li`
 );
 const SideMenuRight = document.querySelectorAll(
-  `.feature-container .feature-content .navbar .container-fluid .side-menu-container .nav-side-right`
+  `.side-menu-container .nav-side-right`
 );
 const SideMenuRightCloseBtn = document.querySelectorAll(
-  `.feature-container .feature-content .navbar .container-fluid .side-menu-container .nav-side-right .nav-side-right-item button.btn`
+  `.side-menu-container .nav-side-right .nav-side-right-item button.btn`
 );
-console.log(SideMenuRight);
-console.log(SideMenuRightCloseBtn);
 SideMenuLeftLi.forEach((item, index) => {
   item.addEventListener("click", () => {
     item.classList.add("active-sidemenu-left");
@@ -72,7 +68,7 @@ SideMenuLeftLi.forEach((item, index) => {
         SideMenuRight[
           removeIndex
         ].style.cssText = `transform: translateX(-100%);
-  z-index: 0;`;
+        z-index: 0;`;
       }
     });
   });
@@ -81,6 +77,59 @@ SideMenuLeftLi.forEach((item, index) => {
 SideMenuRightCloseBtn.forEach((btn, index) => {
   btn.addEventListener("click", () => {
     SideMenuRight[index].style.cssText = `transform: translateX(-100%);
-  z-index: 0;`;
+    z-index: 0;`;
+  });
+});
+
+//model side submenu to open/close
+const SideMenuLeftLiModel = document.querySelectorAll(
+  `.side-menu-container-model .nav-side-left ul li.list-model`
+);
+const SideMenuRightModel = document.querySelectorAll(
+  `.side-menu-container-model .nav-side-right`
+);
+const SideMenuRightCloseBtnModel = document.querySelectorAll(
+  `.side-menu-container-model .nav-side-right button.btn`
+);
+const SideMenuRightImgModel = document.querySelectorAll(
+  `.side-menu-container .nav-side-right .nav-side-right-item .list-image li`
+);
+//click on the right list image
+SideMenuRightImgModel.forEach((target, index) => {
+  target.addEventListener("click", () => {
+    SideMenuLeftLiModel[index].classList.add("active-sidemenu-left");
+    SideMenuRightModel[index].style.cssText = `transform: translateX(0);`;
+    SideMenuRightImgModel.forEach((_, removeIndex) => {
+      if (index != removeIndex) {
+        SideMenuLeftLiModel[removeIndex].classList.remove(
+          "active-sidemenu-left"
+        );
+        SideMenuRightModel[
+          removeIndex
+        ].style.cssText = `transform: translateX(-100%);`;
+      }
+    });
+  });
+});
+//click on the li model
+SideMenuLeftLiModel.forEach((item, index) => {
+  item.addEventListener("click", () => {
+    item.classList.add("active-sidemenu-left");
+    SideMenuRightModel[index].style.cssText = `transform: translateX(0);`;
+    SideMenuLeftLiModel.forEach((removeStyle, removeIndex) => {
+      if (index != removeIndex) {
+        removeStyle.classList.remove("active-sidemenu-left");
+        SideMenuRightModel[
+          removeIndex
+        ].style.cssText = `transform: translateX(-100%);`;
+      }
+    });
+  });
+});
+
+SideMenuRightCloseBtnModel.forEach((btn, index) => {
+  btn.addEventListener("click", () => {
+    SideMenuRightModel[index].style.cssText = `transform: translateX(-100%);
+    z-index: 0;`;
   });
 });

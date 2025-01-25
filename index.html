@@ -17,6 +17,1339 @@
     <link rel="icon" href="asset/Image/porsche_icon.png" />
   </head>
   <body>
+    <!-- sidemenu -->
+    <div
+      class="side-menu-container d-flex flex-row offcanvas offcanvas-start"
+      tabindex="-1"
+      id="offcanvasNavbar"
+      aria-labelledby="offcanvasNavbarLabel"
+    >
+      <!-- Nav sidemenu left -->
+      <div class="nav-side-left h-100 d-flex justify-content-center bg-light">
+        <button
+          type="button"
+          class="d-flex justify-content-center align-items-center position-absolute border-0 rounded-3"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        >
+          <i class="fa-solid fa-x"></i>
+        </button>
+        <ul class="w-100 px-5 m-0 d-flex flex-column gap-1">
+          <li
+            class="active-sidemenu-left w-100 d-flex align-items-center justify-content-between px-3 rounded-1"
+          >
+            Models
+            <span><i class="fa-solid fa-angle-right"></i></span>
+          </li>
+          <li
+            class="w-100 d-flex align-items-center justify-content-between px-3 rounded-1"
+          >
+            Shopping Tools
+            <span><i class="fa-solid fa-angle-right"></i></span>
+          </li>
+          <li
+            class="w-100 d-flex align-items-center justify-content-between px-3 rounded-1"
+          >
+            Porsche Shop
+            <span><i class="fa-solid fa-angle-right"></i></span>
+          </li>
+          <li
+            class="w-100 d-flex align-items-center justify-content-between px-3 rounded-1"
+          >
+            Services
+            <span><i class="fa-solid fa-angle-right"></i></span>
+          </li>
+          <li
+            class="w-100 d-flex align-items-center justify-content-between px-3 rounded-1"
+          >
+            Experience
+            <span><i class="fa-solid fa-angle-right"></i></span>
+          </li>
+          <li
+            class="w-100 d-flex align-items-center justify-content-between px-3 rounded-1"
+          >
+            Porsche Center
+            <span><i class="fa-solid fa-angle-right"></i></span>
+          </li>
+          <li
+            class="w-100 d-flex align-items-center justify-content-between px-3 rounded-1"
+          >
+            My Porsche
+            <span><i class="fa-solid fa-angle-right"></i></span>
+          </li>
+        </ul>
+      </div>
+      <!-- Nav Sidemnu right model -->
+      <div
+        class="active-sidemenu-right nav-side-right position-absolute overflow-y-scroll h-100"
+      >
+        <div
+          class="nav-side-right-item w-100 d-flex flex-column align-items-center"
+        >
+          <button class="btn position-absolute d-md-none" style="left: 0">
+            <i class="fa-solid fa-arrow-left fs-4"></i>
+          </button>
+          <h1 class="d-md-none d-block">Models</h1>
+          <ul
+            class="list-image w-100 m-0 d-flex align-items-center flex-column gap-1"
+          >
+            <li
+              class="position-relative"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasModeldetail"
+              aria-controls="offcanvasModeldetailLabel"
+              aria-label="Toggle navigation"
+            >
+              <div
+                href="#"
+                class="des w-100 h-100 position-absolute p-3 d-flex flex-column justify-content-between"
+              >
+                <h1 class="fs-5">718</h1>
+                <div>
+                  <span
+                    class="badge bg-light text-dark py-2"
+                    style="width: fit-content"
+                    >Gasoline</span
+                  >
+                </div>
+              </div>
+              <img src="asset/Image/navside1.webp" alt="" />
+            </li>
+            <li
+              class="position-relative"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasModeldetail"
+              aria-controls="offcanvasModeldetailLabel"
+              aria-label="Toggle navigation"
+            >
+              <div
+                href="#"
+                class="des w-100 h-100 position-absolute p-3 d-flex flex-column justify-content-between"
+              >
+                <h1 class="fs-5">911</h1>
+                <div>
+                  <span
+                    class="badge bg-light text-dark py-2"
+                    style="width: fit-content"
+                    >Gasoline</span
+                  >
+                </div>
+              </div>
+              <img src="asset/Image/navside2.webp" alt="" />
+            </li>
+            <li
+              class="position-relative"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasModeldetail"
+              aria-controls="offcanvasModeldetailLabel"
+              aria-label="Toggle navigation"
+            >
+              <div
+                href="#"
+                class="des w-100 h-100 position-absolute p-3 d-flex flex-column justify-content-between"
+              >
+                <h1 class="fs-5">Taycan</h1>
+                <div>
+                  <span
+                    class="badge bg-light text-dark py-2"
+                    style="width: fit-content"
+                    >Electric</span
+                  >
+                </div>
+              </div>
+              <img src="asset/Image/navside3.webp" alt="" />
+            </li>
+            <li
+              class="position-relative"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasModeldetail"
+              aria-controls="offcanvasModeldetailLabel"
+              aria-label="Toggle navigation"
+            >
+              <div
+                href="#"
+                class="des w-100 h-100 position-absolute p-3 d-flex flex-column justify-content-between"
+              >
+                <h1 class="fs-5">Panamera</h1>
+                <div>
+                  <span
+                    class="badge bg-light text-dark py-2"
+                    style="width: fit-content"
+                    >Hybrid</span
+                  >
+                  <span
+                    class="badge bg-light text-dark py-2"
+                    style="width: fit-content"
+                    >Gasoline</span
+                  >
+                </div>
+              </div>
+              <img src="asset/Image/navside4.webp" alt="" />
+            </li>
+            <li
+              class="position-relative"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasModeldetail"
+              aria-controls="offcanvasModeldetailLabel"
+              aria-label="Toggle navigation"
+            >
+              <div
+                href="#"
+                class="des w-100 h-100 position-absolute p-3 d-flex flex-column justify-content-between"
+              >
+                <h1 class="fs-5">Macan</h1>
+                <div>
+                  <span
+                    class="badge bg-light text-dark py-2"
+                    style="width: fit-content"
+                    >Electric</span
+                  >
+                  <span
+                    class="badge bg-light text-dark py-2"
+                    style="width: fit-content"
+                    >Gasoline</span
+                  >
+                </div>
+              </div>
+              <img src="asset/Image/navside5.webp" alt="" />
+            </li>
+            <li
+              class="position-relative"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasModeldetail"
+              aria-controls="offcanvasModeldetailLabel"
+              aria-label="Toggle navigation"
+            >
+              <div
+                href="#"
+                class="des w-100 h-100 position-absolute p-3 d-flex flex-column justify-content-between"
+              >
+                <h1 class="fs-5">Cayenne</h1>
+                <div>
+                  <span
+                    class="badge bg-light text-dark py-2"
+                    style="width: fit-content"
+                    >Hybrid</span
+                  >
+                  <span
+                    class="badge bg-light text-dark py-2"
+                    style="width: fit-content"
+                    >Gasoline</span
+                  >
+                </div>
+              </div>
+              <img src="asset/Image/navside6.webp" alt="" />
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- Nav sidmenu right shopping tool -->
+      <div class="nav-side-right position-absolute overflow-y-scroll h-100">
+        <div
+          class="nav-side-right-item w-100 d-flex flex-column align-items-center"
+        >
+          <button class="btn position-absolute d-md-none" style="left: 0">
+            <i class="fa-solid fa-arrow-left fs-4"></i>
+          </button>
+          <h1 class="d-md-none d-block">Shopping Tools</h1>
+          <ul
+            class="list-menu w-100 m-0 d-flex align-items-center flex-column gap-1"
+          >
+            <li class="d-flex align-items-center px-3">
+              <a href="#">Build Your Own </a>
+            </li>
+            <li class="d-flex align-items-center px-3">
+              <a href="#">Compare Models </a>
+            </li>
+            <li class="d-flex align-items-center px-3">
+              <a href="#">New & Used Inventory </a>
+            </li>
+            <li class="d-flex align-items-center px-3">
+              <a href="#">Current Vehicle Offers </a>
+            </li>
+            <li class="d-flex align-items-center px-3">
+              <a href="#">Certified Pre-Owned & Warranty </a>
+            </li>
+            <li class="d-flex align-items-center px-3">
+              <a href="#">Porsche Financial Services </a>
+            </li>
+            <li class="d-flex align-items-center px-3">
+              <a href="#">E-Mobility & E-Performance </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- Nav sidmenu right porsche shop -->
+      <div class="nav-side-right position-absolute overflow-y-scroll h-100">
+        <div
+          class="nav-side-right-item w-100 d-flex flex-column align-items-center"
+        >
+          <button class="btn position-absolute d-md-none" style="left: 0">
+            <i class="fa-solid fa-arrow-left fs-4"></i>
+          </button>
+          <h1 class="d-md-none d-block">Porsche Shop</h1>
+          <ul
+            class="list-menu w-100 m-0 d-flex align-items-center flex-column gap-1"
+          >
+            <li class="d-flex align-items-center px-3">
+              <a href=""> End of Season Sale </a>
+            </li>
+            <li class="d-flex align-items-center px-3">
+              <a href=""> Vehicle Accessories </a>
+            </li>
+            <li class="d-flex align-items-center px-3">
+              <a href=""> Clothes </a>
+            </li>
+            <li class="d-flex align-items-center px-3">
+              <a href=""> Home & Lifestyle </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- Nav sidmenu right services -->
+      <div class="nav-side-right position-absolute overflow-y-scroll h-100">
+        <div
+          class="nav-side-right-item w-100 d-flex flex-column align-items-center"
+        >
+          <button class="btn position-absolute d-md-none" style="left: 0">
+            <i class="fa-solid fa-arrow-left fs-4"></i>
+          </button>
+          <h1 class="d-md-none d-block">Services</h1>
+          <ul
+            class="list-menu w-100 m-0 d-flex align-items-center flex-column gap-1"
+          >
+            <li class="d-flex align-items-center px-3">
+              <a href=""> Tequipment - Genuine Accessories </a>
+            </li>
+            <li class="d-flex align-items-center px-3">
+              <a href=""> Exclusive Manufaktur - Indivitual Vehicles </a>
+            </li>
+            <li class="d-flex align-items-center px-3">
+              <a href=""> Online Bill Payment </a>
+            </li>
+            <li class="d-flex align-items-center px-3">
+              <a href=""> Delivery Programs </a>
+            </li>
+            <li class="d-flex align-items-center px-3">
+              <a href=""> Porsche Protection Plan </a>
+            </li>
+            <li class="d-flex align-items-center px-3">
+              <a href=""> Service & Maintenance </a>
+            </li>
+            <li class="d-flex align-items-center px-3">
+              <a href=""> Classic - Service & Parts </a>
+            </li>
+            <li class="d-flex align-items-center px-3">
+              <a href=""> Recall Information </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- Nav sidmenu right experience -->
+      <div class="nav-side-right position-absolute overflow-y-scroll h-100">
+        <div
+          class="nav-side-right-item w-100 d-flex flex-column align-items-center"
+        >
+          <button class="btn position-absolute d-md-none" style="left: 0">
+            <i class="fa-solid fa-arrow-left fs-4"></i>
+          </button>
+          <h1 class="d-md-none d-block">Experience</h1>
+          <ul
+            class="list-menu w-100 m-0 d-flex align-items-center flex-column gap-1"
+          >
+            <li class="d-flex align-items-center px-3">
+              <a href=""> Motorsport</a>
+            </li>
+            <li class="d-flex align-items-center px-3">
+              <a href=""> Drive - Rentals & Subscriptions </a>
+            </li>
+            <li class="d-flex align-items-center px-3">
+              <a href=""> Experience Center Atlanta </a>
+            </li>
+            <li class="d-flex align-items-center px-3">
+              <a href=""> Experience Center Los Angeles </a>
+            </li>
+            <li class="d-flex align-items-center px-3">
+              <a href=""> Track Experience Birmingham </a>
+            </li>
+            <li class="d-flex align-items-center px-3">
+              <a href=""> Travel Experience </a>
+            </li>
+            <li class="d-flex align-items-center px-3">
+              <a href="">E-Zentrum </a>
+            </li>
+            <li class="d-flex align-items-center px-3">
+              <a href=""> Apps & Entertainment </a>
+            </li>
+            <li class="d-flex align-items-center px-3">
+              <a href=""> Stories - People. Passion. Places </a>
+            </li>
+            <li class="d-flex align-items-center px-3">
+              <a href=""> Christophorus - The Prosche Magazine </a>
+            </li>
+            <li class="d-flex align-items-center px-3">
+              <a href="">Newsletter </a>
+            </li>
+            <li class="d-flex align-items-center px-3">
+              <a href=""> Porsche Clubs </a>
+            </li>
+            <li class="d-flex align-items-center px-3">
+              <a href=""> Golf</a>
+            </li>
+            <li class="d-flex align-items-center px-3">
+              <a href="">Museum </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- Nav sidmenu right porsche center -->
+      <div class="nav-side-right position-absolute overflow-y-scroll h-100">
+        <div
+          class="nav-side-right-item w-100 d-flex flex-column align-items-center"
+        >
+          <button class="btn position-absolute d-md-none" style="left: 0">
+            <i class="fa-solid fa-arrow-left fs-4"></i>
+          </button>
+          <h1 class="d-md-none d-block">Porsche Center</h1>
+          <div class="input-form d-flex flex-column">
+            <div class="input w-100 position-relative">
+              <input
+                class="w-100 h-100 rounded-2"
+                type="text"
+                placeholder="Zip code or Town"
+              />
+              <i
+                class="fa-solid fa-magnifying-glass position-absolute"
+                style="
+                  right: 20px;
+                  top: 50%;
+                  transform: translateY(-50%);
+                  cursor: pointer;
+                "
+              ></i>
+            </div>
+            <span class="fs-5 my-2" style="font-family: 'Poppins'">or</span>
+            <button class="w-100 rounded-1">
+              <i class="fa-solid fa-location"></i> Use Current Location
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- Nav sidmenu right my porsche -->
+      <div class="nav-side-right position-absolute overflow-y-scroll h-100">
+        <div
+          class="nav-side-right-item w-100 d-flex flex-column align-items-center"
+        >
+          <button class="btn position-absolute d-md-none" style="left: 0">
+            <i class="fa-solid fa-arrow-left fs-4"></i>
+          </button>
+          <h1 class="d-md-none d-block">My Porsche</h1>
+          <ul
+            class="list-menu w-100 m-0 d-flex align-items-center flex-column gap-1"
+          >
+            <div
+              class="btn-porsche w-100 px-4 d-flex gap-2 align-items-center px-4"
+              style="height: 50px; margin-bottom: 20px"
+            >
+              <button class="login rounded-1">
+                <a href="#" class="text-light" style="font-family: 'Poppins'"
+                  >Login</a
+                >
+              </button>
+              <button class="discover rounded-1">
+                <a href="#" class="text-dark" style="font-family: 'Poppins'"
+                  >Discover More</a
+                >
+              </button>
+            </div>
+            <li class="d-flex align-items-center px-3">
+              <a href=""> Overview </a>
+            </li>
+            <li class="d-flex align-items-center px-3">
+              <a href=""> Messages </a>
+            </li>
+            <li class="d-flex align-items-center px-3">
+              <a href=""> Saved Searches </a>
+            </li>
+            <li class="d-flex align-items-center px-3">
+              <a href=""> Saved Cars </a>
+            </li>
+            <li class="d-flex align-items-center px-3">
+              <a href=""> Find Connect Services </a>
+            </li>
+            <li class="d-flex align-items-center px-3">
+              <a href=""> Booking & Orders </a>
+            </li>
+            <li class="d-flex align-items-center px-3">
+              <a href=""> Profile Settings </a>
+            </li>
+            <li class="d-flex align-items-center px-3">
+              <a href=""> Privacy </a>
+            </li>
+            <li class="d-flex align-items-center px-3">
+              <a href=""> Contact & Support </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!--sidemenu model detail  -->
+    <div
+      class="side-menu-container-model d-flex flex-row offcanvas offcanvas-start"
+      tabindex="-1"
+      id="offcanvasModeldetail"
+      aria-labelledby="offcanvasModeldetailLabel"
+    >
+      <!-- Nav sidemenu left -->
+      <div class="nav-side-left h-100 d-flex justify-content-center bg-light">
+        <button
+          type="button"
+          class="d-md-flex d-none justify-content-center align-items-center position-absolute border-0 rounded-3"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        >
+          <i class="fa-solid fa-x"></i>
+        </button>
+        <ul class="w-100 px-5 m-0 d-flex flex-column gap-1">
+          <li
+            class="btn-arrow d-flex align-items-center justify-content-center rounded-1"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+            aria-label="Close"
+          >
+            <button class="border-0">
+              <i class="fa-solid fs-3 fa-arrow-left"></i>
+            </button>
+            Models
+          </li>
+          <li
+            class="list-model w-100 d-flex align-items-center justify-content-between px-3 rounded-1"
+          >
+            <div class="d-flex flex-column">
+              718
+              <span
+                class="fw-normal fs-6 text-secondary"
+                style="width: fit-content"
+                >Gasoline</span
+              >
+            </div>
+            <span><i class="fa-solid fa-angle-right"></i></span>
+          </li>
+          <li
+            class="list-model w-100 d-flex align-items-center justify-content-between px-3 rounded-1"
+          >
+            <div class="d-flex flex-column">
+              911
+              <span
+                class="fw-normal fs-6 text-secondary"
+                style="width: fit-content"
+                >Gasoline</span
+              >
+            </div>
+            <span><i class="fa-solid fa-angle-right"></i></span>
+          </li>
+          <li
+            class="list-model w-100 d-flex align-items-center justify-content-between px-3 rounded-1"
+          >
+            <div class="d-flex flex-column">
+              Taycan
+              <span
+                class="fw-normal fs-6 text-secondary"
+                style="width: fit-content"
+                >Electric</span
+              >
+            </div>
+            <span><i class="fa-solid fa-angle-right"></i></span>
+          </li>
+          <li
+            class="list-model w-100 d-flex align-items-center justify-content-between px-3 rounded-1"
+          >
+            <div class="d-flex flex-column">
+              Panamera
+              <span
+                class="fw-normal fs-6 text-secondary"
+                style="width: fit-content"
+                >Hybrid|Electric</span
+              >
+            </div>
+            <span><i class="fa-solid fa-angle-right"></i></span>
+          </li>
+          <li
+            class="list-model w-100 d-flex align-items-center justify-content-between px-3 rounded-1"
+          >
+            <div class="d-flex flex-column">
+              Macan
+              <span
+                class="fw-normal fs-6 text-secondary"
+                style="width: fit-content"
+                >Electric|Gasoline</span
+              >
+            </div>
+            <span><i class="fa-solid fa-angle-right"></i></span>
+          </li>
+          <li
+            class="list-model w-100 d-flex align-items-center justify-content-between px-3 rounded-1"
+          >
+            <div class="d-flex flex-column">
+              Cayenne
+              <span
+                class="fw-normal fs-6 text-secondary"
+                style="width: fit-content"
+                >Hybrid|Gasoline</span
+              >
+            </div>
+            <span><i class="fa-solid fa-angle-right"></i></span>
+          </li>
+        </ul>
+      </div>
+      <!-- Nav Sidemnu right 718 -->
+      <div class="nav-side-right position-absolute overflow-y-scroll h-100">
+        <button class="btn position-absolute d-md-none" style="left: 0">
+          <i class="fa-solid fa-arrow-left fs-4"></i>
+        </button>
+        <div class="header-model w-100 d-flex align-items-center flex-column">
+          <div class="img">
+            <img src="asset/Image/718.svg" alt="" />
+          </div>
+          <div class="btn-container">
+            <button class="rounded-1">
+              <i class="fa-solid fa-gear me-2"></i>Build Your Porsche
+            </button>
+            <button class="rounded-1">
+              <i class="fa-solid fa-arrow-right-arrow-left me-2"></i>
+              Compare
+            </button>
+            <button class="rounded-1">
+              <i class="fa-solid fa-magnifying-glass me-2"></i>New & Used
+              Inventory
+            </button>
+            <button class="rounded-1">
+              <i class="fa-solid fa-car me-2"></i>718 Models
+            </button>
+          </div>
+        </div>
+        <div
+          class="nav-side-right-item w-100 d-flex flex-column align-items-center"
+        >
+          <ul
+            class="list-image w-100 m-0 d-flex align-items-center flex-column gap-1"
+          >
+            <li class="position-relative">
+              <div
+                href="#"
+                class="des w-100 h-100 position-absolute p-3 d-flex flex-column justify-content-between"
+              >
+                <h1 class="fs-5 d-flex flex-column fw-bold">
+                  718 Cayman
+                  <span class="text-secondary fs-6 fw-normal"
+                    >4 Models Available</span
+                  >
+                </h1>
+                <div>
+                  <span
+                    class="badge bg-light text-dark py-2"
+                    style="width: fit-content"
+                    >Gasoline</span
+                  >
+                </div>
+              </div>
+              <img src="asset/Image/navside1.webp" alt="" />
+            </li>
+            <li class="position-relative">
+              <div
+                href="#"
+                class="des w-100 h-100 position-absolute p-3 d-flex flex-column justify-content-between"
+              >
+                <h1 class="fs-5 d-flex flex-column fw-bold">
+                  718 Boxster
+                  <span class="text-secondary fs-6 fw-normal"
+                    >4 Models Available</span
+                  >
+                </h1>
+                <div>
+                  <span
+                    class="badge bg-light text-dark py-2"
+                    style="width: fit-content"
+                    >Gasoline</span
+                  >
+                </div>
+              </div>
+              <img src="asset/Image/navside2.webp" alt="" />
+            </li>
+            <li class="position-relative">
+              <div
+                href="#"
+                class="des w-100 h-100 position-absolute p-3 d-flex flex-column justify-content-between"
+              >
+                <h1 class="fs-5 d-flex flex-column fw-bold">
+                  718 Spyder RS
+                  <span class="text-secondary fs-6 fw-normal"
+                    >4 Models Available</span
+                  >
+                </h1>
+                <div>
+                  <span
+                    class="badge bg-light text-dark py-2"
+                    style="width: fit-content"
+                    >Electric</span
+                  >
+                </div>
+              </div>
+              <img src="asset/Image/navside3.webp" alt="" />
+            </li>
+            <li class="position-relative">
+              <div
+                href="#"
+                class="des w-100 h-100 position-absolute p-3 d-flex flex-column justify-content-between"
+              >
+                <h1 class="fs-5 d-flex flex-column fw-bold">
+                  718 Cayman GT4 RS
+                  <span class="text-secondary fs-6 fw-normal"
+                    >4 Models Available</span
+                  >
+                </h1>
+                <div>
+                  <span
+                    class="badge bg-light text-dark py-2"
+                    style="width: fit-content"
+                    >Hybrid</span
+                  >
+                  <span
+                    class="badge bg-light text-dark py-2"
+                    style="width: fit-content"
+                    >Gasoline</span
+                  >
+                </div>
+              </div>
+              <img src="asset/Image/navside4.webp" alt="" />
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- Nav Sidemnu right 911 -->
+      <div class="nav-side-right position-absolute overflow-y-scroll h-100">
+        <button class="btn position-absolute d-md-none" style="left: 0">
+          <i class="fa-solid fa-arrow-left fs-4"></i>
+        </button>
+        <div class="header-model w-100 d-flex align-items-center flex-column">
+          <div class="img">
+            <img src="asset/Image/911.svg" alt="" />
+          </div>
+          <div class="btn-container">
+            <button class="rounded-1">
+              <i class="fa-solid fa-gear me-2"></i>Build Your Porsche
+            </button>
+            <button class="rounded-1">
+              <i class="fa-solid fa-arrow-right-arrow-left me-2"></i>
+              Compare
+            </button>
+            <button class="rounded-1">
+              <i class="fa-solid fa-magnifying-glass me-2"></i>New & Used
+              Inventory
+            </button>
+            <button class="rounded-1">
+              <i class="fa-solid fa-car me-2"></i>718 Models
+            </button>
+          </div>
+        </div>
+        <div
+          class="nav-side-right-item w-100 d-flex flex-column align-items-center"
+        >
+          <ul
+            class="list-image w-100 m-0 d-flex align-items-center flex-column gap-1"
+          >
+            <li class="position-relative">
+              <div
+                href="#"
+                class="des w-100 h-100 position-absolute p-3 d-flex flex-column justify-content-between"
+              >
+                <h1 class="fs-5 d-flex flex-column fw-bold">
+                  718 Cayman
+                  <span class="text-secondary fs-6 fw-normal"
+                    >4 Models Available</span
+                  >
+                </h1>
+                <div>
+                  <span
+                    class="badge bg-light text-dark py-2"
+                    style="width: fit-content"
+                    >Gasoline</span
+                  >
+                </div>
+              </div>
+              <img src="asset/Image/navside1.webp" alt="" />
+            </li>
+            <li class="position-relative">
+              <div
+                href="#"
+                class="des w-100 h-100 position-absolute p-3 d-flex flex-column justify-content-between"
+              >
+                <h1 class="fs-5 d-flex flex-column fw-bold">
+                  718 Boxster
+                  <span class="text-secondary fs-6 fw-normal"
+                    >4 Models Available</span
+                  >
+                </h1>
+                <div>
+                  <span
+                    class="badge bg-light text-dark py-2"
+                    style="width: fit-content"
+                    >Gasoline</span
+                  >
+                </div>
+              </div>
+              <img src="asset/Image/navside2.webp" alt="" />
+            </li>
+            <li class="position-relative">
+              <div
+                href="#"
+                class="des w-100 h-100 position-absolute p-3 d-flex flex-column justify-content-between"
+              >
+                <h1 class="fs-5 d-flex flex-column fw-bold">
+                  718 Spyder RS
+                  <span class="text-secondary fs-6 fw-normal"
+                    >4 Models Available</span
+                  >
+                </h1>
+                <div>
+                  <span
+                    class="badge bg-light text-dark py-2"
+                    style="width: fit-content"
+                    >Electric</span
+                  >
+                </div>
+              </div>
+              <img src="asset/Image/navside3.webp" alt="" />
+            </li>
+            <li class="position-relative">
+              <div
+                href="#"
+                class="des w-100 h-100 position-absolute p-3 d-flex flex-column justify-content-between"
+              >
+                <h1 class="fs-5 d-flex flex-column fw-bold">
+                  718 Cayman GT4 RS
+                  <span class="text-secondary fs-6 fw-normal"
+                    >4 Models Available</span
+                  >
+                </h1>
+                <div>
+                  <span
+                    class="badge bg-light text-dark py-2"
+                    style="width: fit-content"
+                    >Hybrid</span
+                  >
+                  <span
+                    class="badge bg-light text-dark py-2"
+                    style="width: fit-content"
+                    >Gasoline</span
+                  >
+                </div>
+              </div>
+              <img src="asset/Image/navside4.webp" alt="" />
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- Nav Sidemnu right Taycan -->
+      <div class="nav-side-right position-absolute overflow-y-scroll h-100">
+        <button class="btn position-absolute d-md-none" style="left: 0">
+          <i class="fa-solid fa-arrow-left fs-4"></i>
+        </button>
+        <div class="header-model w-100 d-flex align-items-center flex-column">
+          <div class="img">
+            <img src="asset/Image/taycan.svg" alt="" />
+          </div>
+          <div class="btn-container">
+            <button class="rounded-1">
+              <i class="fa-solid fa-gear me-2"></i>Build Your Porsche
+            </button>
+            <button class="rounded-1">
+              <i class="fa-solid fa-arrow-right-arrow-left me-2"></i>
+              Compare
+            </button>
+            <button class="rounded-1">
+              <i class="fa-solid fa-magnifying-glass me-2"></i>New & Used
+              Inventory
+            </button>
+            <button class="rounded-1">
+              <i class="fa-solid fa-car me-2"></i>718 Models
+            </button>
+          </div>
+        </div>
+        <div
+          class="nav-side-right-item w-100 d-flex flex-column align-items-center"
+        >
+          <ul
+            class="list-image w-100 m-0 d-flex align-items-center flex-column gap-1"
+          >
+            <li class="position-relative">
+              <div
+                href="#"
+                class="des w-100 h-100 position-absolute p-3 d-flex flex-column justify-content-between"
+              >
+                <h1 class="fs-5 d-flex flex-column fw-bold">
+                  718 Cayman
+                  <span class="text-secondary fs-6 fw-normal"
+                    >4 Models Available</span
+                  >
+                </h1>
+                <div>
+                  <span
+                    class="badge bg-light text-dark py-2"
+                    style="width: fit-content"
+                    >Gasoline</span
+                  >
+                </div>
+              </div>
+              <img src="asset/Image/navside1.webp" alt="" />
+            </li>
+            <li class="position-relative">
+              <div
+                href="#"
+                class="des w-100 h-100 position-absolute p-3 d-flex flex-column justify-content-between"
+              >
+                <h1 class="fs-5 d-flex flex-column fw-bold">
+                  718 Boxster
+                  <span class="text-secondary fs-6 fw-normal"
+                    >4 Models Available</span
+                  >
+                </h1>
+                <div>
+                  <span
+                    class="badge bg-light text-dark py-2"
+                    style="width: fit-content"
+                    >Gasoline</span
+                  >
+                </div>
+              </div>
+              <img src="asset/Image/navside2.webp" alt="" />
+            </li>
+            <li class="position-relative">
+              <div
+                href="#"
+                class="des w-100 h-100 position-absolute p-3 d-flex flex-column justify-content-between"
+              >
+                <h1 class="fs-5 d-flex flex-column fw-bold">
+                  718 Spyder RS
+                  <span class="text-secondary fs-6 fw-normal"
+                    >4 Models Available</span
+                  >
+                </h1>
+                <div>
+                  <span
+                    class="badge bg-light text-dark py-2"
+                    style="width: fit-content"
+                    >Electric</span
+                  >
+                </div>
+              </div>
+              <img src="asset/Image/navside3.webp" alt="" />
+            </li>
+            <li class="position-relative">
+              <div
+                href="#"
+                class="des w-100 h-100 position-absolute p-3 d-flex flex-column justify-content-between"
+              >
+                <h1 class="fs-5 d-flex flex-column fw-bold">
+                  718 Cayman GT4 RS
+                  <span class="text-secondary fs-6 fw-normal"
+                    >4 Models Available</span
+                  >
+                </h1>
+                <div>
+                  <span
+                    class="badge bg-light text-dark py-2"
+                    style="width: fit-content"
+                    >Hybrid</span
+                  >
+                  <span
+                    class="badge bg-light text-dark py-2"
+                    style="width: fit-content"
+                    >Gasoline</span
+                  >
+                </div>
+              </div>
+              <img src="asset/Image/navside4.webp" alt="" />
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- Nav Sidemnu right Panamera -->
+      <div class="nav-side-right position-absolute overflow-y-scroll h-100">
+        <button class="btn position-absolute d-md-none" style="left: 0">
+          <i class="fa-solid fa-arrow-left fs-4"></i>
+        </button>
+        <div class="header-model w-100 d-flex align-items-center flex-column">
+          <div class="img">
+            <img src="asset/Image/panamera.svg" alt="" />
+          </div>
+          <div class="btn-container">
+            <button class="rounded-1">
+              <i class="fa-solid fa-gear me-2"></i>Build Your Porsche
+            </button>
+            <button class="rounded-1">
+              <i class="fa-solid fa-arrow-right-arrow-left me-2"></i>
+              Compare
+            </button>
+            <button class="rounded-1">
+              <i class="fa-solid fa-magnifying-glass me-2"></i>New & Used
+              Inventory
+            </button>
+            <button class="rounded-1">
+              <i class="fa-solid fa-car me-2"></i>718 Models
+            </button>
+          </div>
+        </div>
+        <div
+          class="nav-side-right-item w-100 d-flex flex-column align-items-center"
+        >
+          <ul
+            class="list-image w-100 m-0 d-flex align-items-center flex-column gap-1"
+          >
+            <li class="position-relative">
+              <div
+                href="#"
+                class="des w-100 h-100 position-absolute p-3 d-flex flex-column justify-content-between"
+              >
+                <h1 class="fs-5 d-flex flex-column fw-bold">
+                  718 Cayman
+                  <span class="text-secondary fs-6 fw-normal"
+                    >4 Models Available</span
+                  >
+                </h1>
+                <div>
+                  <span
+                    class="badge bg-light text-dark py-2"
+                    style="width: fit-content"
+                    >Gasoline</span
+                  >
+                </div>
+              </div>
+              <img src="asset/Image/navside1.webp" alt="" />
+            </li>
+            <li class="position-relative">
+              <div
+                href="#"
+                class="des w-100 h-100 position-absolute p-3 d-flex flex-column justify-content-between"
+              >
+                <h1 class="fs-5 d-flex flex-column fw-bold">
+                  718 Boxster
+                  <span class="text-secondary fs-6 fw-normal"
+                    >4 Models Available</span
+                  >
+                </h1>
+                <div>
+                  <span
+                    class="badge bg-light text-dark py-2"
+                    style="width: fit-content"
+                    >Gasoline</span
+                  >
+                </div>
+              </div>
+              <img src="asset/Image/navside2.webp" alt="" />
+            </li>
+            <li class="position-relative">
+              <div
+                href="#"
+                class="des w-100 h-100 position-absolute p-3 d-flex flex-column justify-content-between"
+              >
+                <h1 class="fs-5 d-flex flex-column fw-bold">
+                  718 Spyder RS
+                  <span class="text-secondary fs-6 fw-normal"
+                    >4 Models Available</span
+                  >
+                </h1>
+                <div>
+                  <span
+                    class="badge bg-light text-dark py-2"
+                    style="width: fit-content"
+                    >Electric</span
+                  >
+                </div>
+              </div>
+              <img src="asset/Image/navside3.webp" alt="" />
+            </li>
+            <li class="position-relative">
+              <div
+                href="#"
+                class="des w-100 h-100 position-absolute p-3 d-flex flex-column justify-content-between"
+              >
+                <h1 class="fs-5 d-flex flex-column fw-bold">
+                  718 Cayman GT4 RS
+                  <span class="text-secondary fs-6 fw-normal"
+                    >4 Models Available</span
+                  >
+                </h1>
+                <div>
+                  <span
+                    class="badge bg-light text-dark py-2"
+                    style="width: fit-content"
+                    >Hybrid</span
+                  >
+                  <span
+                    class="badge bg-light text-dark py-2"
+                    style="width: fit-content"
+                    >Gasoline</span
+                  >
+                </div>
+              </div>
+              <img src="asset/Image/navside4.webp" alt="" />
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- Nav Sidemnu right Macan -->
+      <div class="nav-side-right position-absolute overflow-y-scroll h-100">
+        <button class="btn position-absolute d-md-none" style="left: 0">
+          <i class="fa-solid fa-arrow-left fs-4"></i>
+        </button>
+        <div class="header-model w-100 d-flex align-items-center flex-column">
+          <div class="img">
+            <img src="asset/Image/macan.svg" alt="" />
+          </div>
+          <div class="btn-container">
+            <button class="rounded-1">
+              <i class="fa-solid fa-gear me-2"></i>Build Your Porsche
+            </button>
+            <button class="rounded-1">
+              <i class="fa-solid fa-arrow-right-arrow-left me-2"></i>
+              Compare
+            </button>
+            <button class="rounded-1">
+              <i class="fa-solid fa-magnifying-glass me-2"></i>New & Used
+              Inventory
+            </button>
+            <button class="rounded-1">
+              <i class="fa-solid fa-car me-2"></i>718 Models
+            </button>
+          </div>
+        </div>
+        <div
+          class="nav-side-right-item w-100 d-flex flex-column align-items-center"
+        >
+          <ul
+            class="list-image w-100 m-0 d-flex align-items-center flex-column gap-1"
+          >
+            <li class="position-relative">
+              <div
+                href="#"
+                class="des w-100 h-100 position-absolute p-3 d-flex flex-column justify-content-between"
+              >
+                <h1 class="fs-5 d-flex flex-column fw-bold">
+                  718 Cayman
+                  <span class="text-secondary fs-6 fw-normal"
+                    >4 Models Available</span
+                  >
+                </h1>
+                <div>
+                  <span
+                    class="badge bg-light text-dark py-2"
+                    style="width: fit-content"
+                    >Gasoline</span
+                  >
+                </div>
+              </div>
+              <img src="asset/Image/navside1.webp" alt="" />
+            </li>
+            <li class="position-relative">
+              <div
+                href="#"
+                class="des w-100 h-100 position-absolute p-3 d-flex flex-column justify-content-between"
+              >
+                <h1 class="fs-5 d-flex flex-column fw-bold">
+                  718 Boxster
+                  <span class="text-secondary fs-6 fw-normal"
+                    >4 Models Available</span
+                  >
+                </h1>
+                <div>
+                  <span
+                    class="badge bg-light text-dark py-2"
+                    style="width: fit-content"
+                    >Gasoline</span
+                  >
+                </div>
+              </div>
+              <img src="asset/Image/navside2.webp" alt="" />
+            </li>
+            <li class="position-relative">
+              <div
+                href="#"
+                class="des w-100 h-100 position-absolute p-3 d-flex flex-column justify-content-between"
+              >
+                <h1 class="fs-5 d-flex flex-column fw-bold">
+                  718 Spyder RS
+                  <span class="text-secondary fs-6 fw-normal"
+                    >4 Models Available</span
+                  >
+                </h1>
+                <div>
+                  <span
+                    class="badge bg-light text-dark py-2"
+                    style="width: fit-content"
+                    >Electric</span
+                  >
+                </div>
+              </div>
+              <img src="asset/Image/navside3.webp" alt="" />
+            </li>
+            <li class="position-relative">
+              <div
+                href="#"
+                class="des w-100 h-100 position-absolute p-3 d-flex flex-column justify-content-between"
+              >
+                <h1 class="fs-5 d-flex flex-column fw-bold">
+                  718 Cayman GT4 RS
+                  <span class="text-secondary fs-6 fw-normal"
+                    >4 Models Available</span
+                  >
+                </h1>
+                <div>
+                  <span
+                    class="badge bg-light text-dark py-2"
+                    style="width: fit-content"
+                    >Hybrid</span
+                  >
+                  <span
+                    class="badge bg-light text-dark py-2"
+                    style="width: fit-content"
+                    >Gasoline</span
+                  >
+                </div>
+              </div>
+              <img src="asset/Image/navside4.webp" alt="" />
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- Nav Sidemnu right Cayenne -->
+      <div class="nav-side-right position-absolute overflow-y-scroll h-100">
+        <button class="btn position-absolute d-md-none" style="left: 0">
+          <i class="fa-solid fa-arrow-left fs-4"></i>
+        </button>
+        <div class="header-model w-100 d-flex align-items-center flex-column">
+          <div class="img">
+            <img src="asset/Image/cayenne.svg" alt="" />
+          </div>
+          <div class="btn-container">
+            <button class="rounded-1">
+              <i class="fa-solid fa-gear me-2"></i>Build Your Porsche
+            </button>
+            <button class="rounded-1">
+              <i class="fa-solid fa-arrow-right-arrow-left me-2"></i>
+              Compare
+            </button>
+            <button class="rounded-1">
+              <i class="fa-solid fa-magnifying-glass me-2"></i>New & Used
+              Inventory
+            </button>
+            <button class="rounded-1">
+              <i class="fa-solid fa-car me-2"></i>718 Models
+            </button>
+          </div>
+        </div>
+        <div
+          class="nav-side-right-item w-100 d-flex flex-column align-items-center"
+        >
+          <ul
+            class="list-image w-100 m-0 d-flex align-items-center flex-column gap-1"
+          >
+            <li class="position-relative">
+              <div
+                href="#"
+                class="des w-100 h-100 position-absolute p-3 d-flex flex-column justify-content-between"
+              >
+                <h1 class="fs-5 d-flex flex-column fw-bold">
+                  718 Cayman
+                  <span class="text-secondary fs-6 fw-normal"
+                    >4 Models Available</span
+                  >
+                </h1>
+                <div>
+                  <span
+                    class="badge bg-light text-dark py-2"
+                    style="width: fit-content"
+                    >Gasoline</span
+                  >
+                </div>
+              </div>
+              <img src="asset/Image/navside1.webp" alt="" />
+            </li>
+            <li class="position-relative">
+              <div
+                href="#"
+                class="des w-100 h-100 position-absolute p-3 d-flex flex-column justify-content-between"
+              >
+                <h1 class="fs-5 d-flex flex-column fw-bold">
+                  718 Boxster
+                  <span class="text-secondary fs-6 fw-normal"
+                    >4 Models Available</span
+                  >
+                </h1>
+                <div>
+                  <span
+                    class="badge bg-light text-dark py-2"
+                    style="width: fit-content"
+                    >Gasoline</span
+                  >
+                </div>
+              </div>
+              <img src="asset/Image/navside2.webp" alt="" />
+            </li>
+            <li class="position-relative">
+              <div
+                href="#"
+                class="des w-100 h-100 position-absolute p-3 d-flex flex-column justify-content-between"
+              >
+                <h1 class="fs-5 d-flex flex-column fw-bold">
+                  718 Spyder RS
+                  <span class="text-secondary fs-6 fw-normal"
+                    >4 Models Available</span
+                  >
+                </h1>
+                <div>
+                  <span
+                    class="badge bg-light text-dark py-2"
+                    style="width: fit-content"
+                    >Electric</span
+                  >
+                </div>
+              </div>
+              <img src="asset/Image/navside3.webp" alt="" />
+            </li>
+            <li class="position-relative">
+              <div
+                href="#"
+                class="des w-100 h-100 position-absolute p-3 d-flex flex-column justify-content-between"
+              >
+                <h1 class="fs-5 d-flex flex-column fw-bold">
+                  718 Cayman GT4 RS
+                  <span class="text-secondary fs-6 fw-normal"
+                    >4 Models Available</span
+                  >
+                </h1>
+                <div>
+                  <span
+                    class="badge bg-light text-dark py-2"
+                    style="width: fit-content"
+                    >Hybrid</span
+                  >
+                  <span
+                    class="badge bg-light text-dark py-2"
+                    style="width: fit-content"
+                    >Gasoline</span
+                  >
+                </div>
+              </div>
+              <img src="asset/Image/navside4.webp" alt="" />
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
     <!-- FeatureTop and Navbar -->
     <div class="feature-container position-relative w-100 vh-100 mb-5">
       <div class="feature-content position-absolute w-100 h-100">
@@ -52,492 +1385,6 @@
             >
               <i class="fa-regular fa-user fs-4 text-light"></i>
             </a>
-
-            <!-- sidemenu -->
-            <div
-              class="side-menu-container d-flex flex-row offcanvas offcanvas-start"
-              tabindex="-1"
-              id="offcanvasNavbar"
-              aria-labelledby="offcanvasNavbarLabel"
-            >
-              <!-- Nav sidemenu left -->
-              <div
-                class="nav-side-left h-100 d-flex justify-content-center align-items-center bg-light"
-              >
-                <button
-                  type="button"
-                  class="d-flex justify-content-center align-items-center position-absolute border-0 rounded-3"
-                  data-bs-dismiss="offcanvas"
-                  aria-label="Close"
-                >
-                  <i class="fa-solid fa-x"></i>
-                </button>
-                <ul class="w-100 px-5 m-0 d-flex flex-column gap-1">
-                  <li
-                    class="active-sidemenu-left w-100 d-flex align-items-center justify-content-between px-3 rounded-1"
-                  >
-                    Models
-                    <span><i class="fa-solid fa-angle-right"></i></span>
-                  </li>
-                  <li
-                    class="w-100 d-flex align-items-center justify-content-between px-3 rounded-1"
-                  >
-                    Shopping Tools
-                    <span><i class="fa-solid fa-angle-right"></i></span>
-                  </li>
-                  <li
-                    class="w-100 d-flex align-items-center justify-content-between px-3 rounded-1"
-                  >
-                    Porsche Shop
-                    <span><i class="fa-solid fa-angle-right"></i></span>
-                  </li>
-                  <li
-                    class="w-100 d-flex align-items-center justify-content-between px-3 rounded-1"
-                  >
-                    Services
-                    <span><i class="fa-solid fa-angle-right"></i></span>
-                  </li>
-                  <li
-                    class="w-100 d-flex align-items-center justify-content-between px-3 rounded-1"
-                  >
-                    Experience
-                    <span><i class="fa-solid fa-angle-right"></i></span>
-                  </li>
-                  <li
-                    class="w-100 d-flex align-items-center justify-content-between px-3 rounded-1"
-                  >
-                    Porsche Center
-                    <span><i class="fa-solid fa-angle-right"></i></span>
-                  </li>
-                  <li
-                    class="w-100 d-flex align-items-center justify-content-between px-3 rounded-1"
-                  >
-                    My Porsche
-                    <span><i class="fa-solid fa-angle-right"></i></span>
-                  </li>
-                </ul>
-              </div>
-              <!-- Nav Sidemnu right model -->
-              <div
-                class="active-sidemenu-right nav-side-right position-absolute overflow-y-scroll h-100"
-              >
-                <div
-                  class="nav-side-right-item w-100 d-flex flex-column align-items-center"
-                >
-                  <button
-                    class="btn position-absolute d-md-none"
-                    style="left: 0"
-                  >
-                    <i class="fa-solid fa-arrow-left fs-4"></i>
-                  </button>
-                  <h1 class="d-md-none d-block">Models</h1>
-                  <ul
-                    class="list-image w-100 m-0 d-flex align-items-center flex-column gap-1"
-                  >
-                    <li class="position-relative">
-                      <a
-                        href="#"
-                        class="des w-100 h-100 position-absolute p-3 d-flex flex-column justify-content-between"
-                      >
-                        <h1 class="fs-5">718</h1>
-                        <div>
-                          <span
-                            class="badge bg-light text-dark py-2"
-                            style="width: fit-content"
-                            >Gasoline</span
-                          >
-                        </div>
-                      </a>
-                      <img src="asset/Image/navside1.webp" alt="" />
-                    </li>
-                    <li class="position-relative">
-                      <a
-                        href="#"
-                        class="des w-100 h-100 position-absolute p-3 d-flex flex-column justify-content-between"
-                      >
-                        <h1 class="fs-5">911</h1>
-                        <div>
-                          <span
-                            class="badge bg-light text-dark py-2"
-                            style="width: fit-content"
-                            >Gasoline</span
-                          >
-                        </div>
-                      </a>
-                      <img src="asset/Image/navside2.webp" alt="" />
-                    </li>
-                    <li class="position-relative">
-                      <a
-                        href="#"
-                        class="des w-100 h-100 position-absolute p-3 d-flex flex-column justify-content-between"
-                      >
-                        <h1 class="fs-5">Taycan</h1>
-                        <div>
-                          <span
-                            class="badge bg-light text-dark py-2"
-                            style="width: fit-content"
-                            >Electric</span
-                          >
-                        </div>
-                      </a>
-                      <img src="asset/Image/navside3.webp" alt="" />
-                    </li>
-                    <li class="position-relative">
-                      <a
-                        href="#"
-                        class="des w-100 h-100 position-absolute p-3 d-flex flex-column justify-content-between"
-                      >
-                        <h1 class="fs-5">Panamera</h1>
-                        <div>
-                          <span
-                            class="badge bg-light text-dark py-2"
-                            style="width: fit-content"
-                            >Hybrid</span
-                          >
-                          <span
-                            class="badge bg-light text-dark py-2"
-                            style="width: fit-content"
-                            >Gasoline</span
-                          >
-                        </div>
-                      </a>
-                      <img src="asset/Image/navside4.webp" alt="" />
-                    </li>
-                    <li class="position-relative">
-                      <a
-                        href="#"
-                        class="des w-100 h-100 position-absolute p-3 d-flex flex-column justify-content-between"
-                      >
-                        <h1 class="fs-5">Macan</h1>
-                        <div>
-                          <span
-                            class="badge bg-light text-dark py-2"
-                            style="width: fit-content"
-                            >Electric</span
-                          >
-                          <span
-                            class="badge bg-light text-dark py-2"
-                            style="width: fit-content"
-                            >Gasoline</span
-                          >
-                        </div>
-                      </a>
-                      <img src="asset/Image/navside5.webp" alt="" />
-                    </li>
-                    <li class="position-relative">
-                      <a
-                        href="#"
-                        class="des w-100 h-100 position-absolute p-3 d-flex flex-column justify-content-between"
-                      >
-                        <h1 class="fs-5">Cayenne</h1>
-                        <div>
-                          <span
-                            class="badge bg-light text-dark py-2"
-                            style="width: fit-content"
-                            >Hybrid</span
-                          >
-                          <span
-                            class="badge bg-light text-dark py-2"
-                            style="width: fit-content"
-                            >Gasoline</span
-                          >
-                        </div>
-                      </a>
-                      <img src="asset/Image/navside6.webp" alt="" />
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <!-- Nav sidmenu right shopping tool -->
-              <div
-                class="nav-side-right position-absolute overflow-y-scroll h-100"
-              >
-                <div
-                  class="nav-side-right-item w-100 d-flex flex-column align-items-center"
-                >
-                  <button
-                    class="btn position-absolute d-md-none"
-                    style="left: 0"
-                  >
-                    <i class="fa-solid fa-arrow-left fs-4"></i>
-                  </button>
-                  <h1 class="d-md-none d-block">Shopping Tools</h1>
-                  <ul
-                    class="list-menu w-100 m-0 d-flex align-items-center flex-column gap-1"
-                  >
-                    <li class="d-flex align-items-center px-3">
-                      <a href="#">Build Your Own </a>
-                    </li>
-                    <li class="d-flex align-items-center px-3">
-                      <a href="#">Compare Models </a>
-                    </li>
-                    <li class="d-flex align-items-center px-3">
-                      <a href="#">New & Used Inventory </a>
-                    </li>
-                    <li class="d-flex align-items-center px-3">
-                      <a href="#">Current Vehicle Offers </a>
-                    </li>
-                    <li class="d-flex align-items-center px-3">
-                      <a href="#">Certified Pre-Owned & Warranty </a>
-                    </li>
-                    <li class="d-flex align-items-center px-3">
-                      <a href="#">Porsche Financial Services </a>
-                    </li>
-                    <li class="d-flex align-items-center px-3">
-                      <a href="#">E-Mobility & E-Performance </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <!-- Nav sidmenu right porsche shop -->
-              <div
-                class="nav-side-right position-absolute overflow-y-scroll h-100"
-              >
-                <div
-                  class="nav-side-right-item w-100 d-flex flex-column align-items-center"
-                >
-                  <button
-                    class="btn position-absolute d-md-none"
-                    style="left: 0"
-                  >
-                    <i class="fa-solid fa-arrow-left fs-4"></i>
-                  </button>
-                  <h1 class="d-md-none d-block">Porsche Shop</h1>
-                  <ul
-                    class="list-menu w-100 m-0 d-flex align-items-center flex-column gap-1"
-                  >
-                    <li class="d-flex align-items-center px-3">
-                      <a href=""> End of Season Sale </a>
-                    </li>
-                    <li class="d-flex align-items-center px-3">
-                      <a href=""> Vehicle Accessories </a>
-                    </li>
-                    <li class="d-flex align-items-center px-3">
-                      <a href=""> Clothes </a>
-                    </li>
-                    <li class="d-flex align-items-center px-3">
-                      <a href=""> Home & Lifestyle </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <!-- Nav sidmenu right services -->
-              <div
-                class="nav-side-right position-absolute overflow-y-scroll h-100"
-              >
-                <div
-                  class="nav-side-right-item w-100 d-flex flex-column align-items-center"
-                >
-                  <button
-                    class="btn position-absolute d-md-none"
-                    style="left: 0"
-                  >
-                    <i class="fa-solid fa-arrow-left fs-4"></i>
-                  </button>
-                  <h1 class="d-md-none d-block">Services</h1>
-                  <ul
-                    class="list-menu w-100 m-0 d-flex align-items-center flex-column gap-1"
-                  >
-                    <li class="d-flex align-items-center px-3">
-                      <a href=""> Tequipment - Genuine Accessories </a>
-                    </li>
-                    <li class="d-flex align-items-center px-3">
-                      <a href="">
-                        Exclusive Manufaktur - Indivitual Vehicles
-                      </a>
-                    </li>
-                    <li class="d-flex align-items-center px-3">
-                      <a href=""> Online Bill Payment </a>
-                    </li>
-                    <li class="d-flex align-items-center px-3">
-                      <a href=""> Delivery Programs </a>
-                    </li>
-                    <li class="d-flex align-items-center px-3">
-                      <a href=""> Porsche Protection Plan </a>
-                    </li>
-                    <li class="d-flex align-items-center px-3">
-                      <a href=""> Service & Maintenance </a>
-                    </li>
-                    <li class="d-flex align-items-center px-3">
-                      <a href=""> Classic - Service & Parts </a>
-                    </li>
-                    <li class="d-flex align-items-center px-3">
-                      <a href=""> Recall Information </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <!-- Nav sidmenu right experience -->
-              <div
-                class="nav-side-right position-absolute overflow-y-scroll h-100"
-              >
-                <div
-                  class="nav-side-right-item w-100 d-flex flex-column align-items-center"
-                >
-                  <button
-                    class="btn position-absolute d-md-none"
-                    style="left: 0"
-                  >
-                    <i class="fa-solid fa-arrow-left fs-4"></i>
-                  </button>
-                  <h1 class="d-md-none d-block">Experience</h1>
-                  <ul
-                    class="list-menu w-100 m-0 d-flex align-items-center flex-column gap-1"
-                  >
-                    <li class="d-flex align-items-center px-3">
-                      <a href=""> Motorsport</a>
-                    </li>
-                    <li class="d-flex align-items-center px-3">
-                      <a href=""> Drive - Rentals & Subscriptions </a>
-                    </li>
-                    <li class="d-flex align-items-center px-3">
-                      <a href=""> Experience Center Atlanta </a>
-                    </li>
-                    <li class="d-flex align-items-center px-3">
-                      <a href=""> Experience Center Los Angeles </a>
-                    </li>
-                    <li class="d-flex align-items-center px-3">
-                      <a href=""> Track Experience Birmingham </a>
-                    </li>
-                    <li class="d-flex align-items-center px-3">
-                      <a href=""> Travel Experience </a>
-                    </li>
-                    <li class="d-flex align-items-center px-3">
-                      <a href="">E-Zentrum </a>
-                    </li>
-                    <li class="d-flex align-items-center px-3">
-                      <a href=""> Apps & Entertainment </a>
-                    </li>
-                    <li class="d-flex align-items-center px-3">
-                      <a href=""> Stories - People. Passion. Places </a>
-                    </li>
-                    <li class="d-flex align-items-center px-3">
-                      <a href=""> Christophorus - The Prosche Magazine </a>
-                    </li>
-                    <li class="d-flex align-items-center px-3">
-                      <a href="">Newsletter </a>
-                    </li>
-                    <li class="d-flex align-items-center px-3">
-                      <a href=""> Porsche Clubs </a>
-                    </li>
-                    <li class="d-flex align-items-center px-3">
-                      <a href=""> Golf</a>
-                    </li>
-                    <li class="d-flex align-items-center px-3">
-                      <a href="">Museum </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <!-- Nav sidmenu right porsche center -->
-              <div
-                class="nav-side-right position-absolute overflow-y-scroll h-100"
-              >
-                <div
-                  class="nav-side-right-item w-100 d-flex flex-column align-items-center"
-                >
-                  <button
-                    class="btn position-absolute d-md-none"
-                    style="left: 0"
-                  >
-                    <i class="fa-solid fa-arrow-left fs-4"></i>
-                  </button>
-                  <h1 class="d-md-none d-block">Porsche Center</h1>
-                  <div class="input-form d-flex flex-column">
-                    <div class="input w-100 position-relative">
-                      <input
-                        class="w-100 h-100 rounded-2"
-                        type="text"
-                        placeholder="Zip code or Town"
-                      />
-                      <i
-                        class="fa-solid fa-magnifying-glass position-absolute"
-                        style="
-                          right: 20px;
-                          top: 50%;
-                          transform: translateY(-50%);
-                          cursor: pointer;
-                        "
-                      ></i>
-                    </div>
-                    <span class="fs-5 my-2" style="font-family: 'Poppins'"
-                      >or</span
-                    >
-                    <button class="w-100 rounded-1">
-                      <i class="fa-solid fa-location"></i> Use Current Location
-                    </button>
-                  </div>
-                </div>
-              </div>
-              <!-- Nav sidmenu right my porsche -->
-              <div
-                class="nav-side-right position-absolute overflow-y-scroll h-100"
-              >
-                <div
-                  class="nav-side-right-item w-100 d-flex flex-column align-items-center"
-                >
-                  <button
-                    class="btn position-absolute d-md-none"
-                    style="left: 0"
-                  >
-                    <i class="fa-solid fa-arrow-left fs-4"></i>
-                  </button>
-                  <h1 class="d-md-none d-block">My Porsche</h1>
-                  <ul
-                    class="list-menu w-100 m-0 d-flex align-items-center flex-column gap-1"
-                  >
-                    <div
-                      class="btn-porsche w-100 px-4 d-flex gap-2 align-items-center px-4"
-                      style="height: 50px; margin-bottom: 20px"
-                    >
-                      <button class="login rounded-1">
-                        <a
-                          href="#"
-                          class="text-light"
-                          style="font-family: 'Poppins'"
-                          >Login</a
-                        >
-                      </button>
-                      <button class="discover rounded-1">
-                        <a
-                          href="#"
-                          class="text-dark"
-                          style="font-family: 'Poppins'"
-                          >Discover More</a
-                        >
-                      </button>
-                    </div>
-                    <li class="d-flex align-items-center px-3">
-                      <a href=""> Overview </a>
-                    </li>
-                    <li class="d-flex align-items-center px-3">
-                      <a href=""> Messages </a>
-                    </li>
-                    <li class="d-flex align-items-center px-3">
-                      <a href=""> Saved Searches </a>
-                    </li>
-                    <li class="d-flex align-items-center px-3">
-                      <a href=""> Saved Cars </a>
-                    </li>
-                    <li class="d-flex align-items-center px-3">
-                      <a href=""> Find Connect Services </a>
-                    </li>
-                    <li class="d-flex align-items-center px-3">
-                      <a href=""> Booking & Orders </a>
-                    </li>
-                    <li class="d-flex align-items-center px-3">
-                      <a href=""> Profile Settings </a>
-                    </li>
-                    <li class="d-flex align-items-center px-3">
-                      <a href=""> Privacy </a>
-                    </li>
-                    <li class="d-flex align-items-center px-3">
-                      <a href=""> Contact & Support </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
           </div>
         </nav>
         <div class="content">
