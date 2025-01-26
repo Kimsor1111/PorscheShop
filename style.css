@@ -82,7 +82,7 @@ h1 {
       ul.list-image {
         padding: 70px 0;
         li {
-          width: 60%;
+          width: 70%;
           height: 200px;
           background-color: rgb(230, 230, 230);
           border-radius: 10px;
@@ -274,9 +274,9 @@ h1 {
       }
       /* sidemenu image */
       ul.list-image {
-        padding: 70px 0;
+        padding: 20px 0;
         li {
-          width: 60%;
+          width: 70%;
           height: 250px;
           background-color: rgb(230, 230, 230);
           border-radius: 10px;
