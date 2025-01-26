@@ -6,21 +6,56 @@
 }
 /*Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) and (max-width: 991.98px) {
-  .feature-container {
-    .feature-content {
-      .navbar {
-        .container-fluid {
-          .side-menu-container {
+  .side-menu-container {
+    width: 90% !important;
+    .nav-side-right {
+      .nav-side-right-item {
+        ul {
+          li {
+            width: 70%;
+          }
+        }
+        ul.list-image {
+          padding: 70px 0 !important;
+          li {
+            background-color: rgb(230, 230, 230);
             width: 90%;
-            .nav-side-right {
-              .nav-side-right-item {
-                ul {
-                  li {
-                    width: 70%;
-                  }
-                }
-              }
-            }
+          }
+          li:hover {
+            background-color: white;
+          }
+        }
+      }
+    }
+  }
+  .side-menu-container-model {
+    width: 90% !important;
+    .nav-side-right {
+      .header-model {
+        height: fit-content;
+        .btn-container {
+          width: 90% !important;
+          button {
+            width: 100% !important;
+            height: 50px;
+            border: 2px solid black;
+            transition: 0.1s;
+          }
+          button:hover {
+            border: 2px solid gray;
+            background-color: rgb(226, 226, 226);
+          }
+        }
+      }
+      .nav-side-right-item {
+        ul.list-image {
+          padding: 20px 0;
+          li {
+            background-color: rgb(230, 230, 230);
+            width: 90%;
+          }
+          li:hover {
+            background-color: white;
           }
         }
       }
@@ -35,66 +70,122 @@
 
 /*Small devices (landscape phones, 576px and up)*/
 @media (max-width: 767.98px) {
+  .side-menu-container {
+    width: 100% !important;
+    .nav-side-left {
+      width: 100%;
+      position: absolute;
+      button {
+        top: 15px;
+        right: 10px;
+        i {
+          color: black !important;
+        }
+      }
+      ul {
+        li.active-sidemenu-left {
+          background-color: transparent;
+        }
+      }
+    }
+    .nav-side-right {
+      width: 100% !important;
+      position: absolute;
+      background-color: white;
+      padding: 20px;
+      transition: all 0.5s linear !important;
+      z-index: 1;
+      .nav-side-right-item {
+        ul.list-image {
+          padding: 20px 0;
+          li {
+            background-color: white;
+            width: 70%;
+          }
+          li:hover {
+            background-color: rgba(0, 0, 0, 0.2);
+          }
+        }
+        ul.list-menu {
+          padding: 20px 0;
+          li {
+            background-color: white;
+          }
+          li:hover {
+            background-color: rgb(230, 230, 230);
+          }
+        }
+        ul .btn-porsche button {
+          width: 50%;
+        }
+      }
+    }
+    .nav-side-right.active-sidemenu-right {
+      transform: translateX(-100%);
+    }
+  }
+  .side-menu-container-model {
+    width: 100% !important;
+    .nav-side-left {
+      width: 100%;
+      position: absolute;
+      button {
+        top: 15px;
+        right: 10px;
+        i {
+          color: black !important;
+        }
+      }
+      ul {
+        li.active-sidemenu-left {
+          background-color: transparent;
+        }
+      }
+    }
+    .nav-side-right {
+      width: 100%;
+      position: absolute;
+      background-color: white;
+      padding: 20px;
+      transition: all 0.5s linear !important;
+      z-index: 1;
+      .header-model {
+        height: fit-content;
+        .btn-container {
+          width: 70% !important;
+          button {
+            width: 100% !important;
+            height: 50px;
+            border: 2px solid black;
+            transition: 0.1s;
+          }
+          button:hover {
+            border: 2px solid gray;
+            background-color: rgb(226, 226, 226);
+          }
+        }
+      }
+      .nav-side-right-item {
+        ul.list-image {
+          padding: 20px 0;
+          li {
+            background-color: white;
+            width: 70%;
+          }
+          li:hover {
+            background-color: rgba(0, 0, 0, 0.2);
+          }
+        }
+      }
+    }
+    .nav-side-right.active-sidemenu-right {
+      transform: translateX(-100%);
+    }
+  }
   .feature-container {
     .feature-content {
       .navbar {
         height: 15%;
-        .container-fluid {
-          .side-menu-container {
-            width: 100%;
-            .nav-side-left {
-              width: 100%;
-              position: absolute;
-              button {
-                top: 15px;
-                right: 10px;
-                i {
-                  color: black !important;
-                }
-              }
-              ul {
-                li.active-sidemenu-left {
-                  background-color: transparent;
-                }
-              }
-            }
-            .nav-side-right {
-              width: 100%;
-              position: absolute;
-              background-color: white;
-              padding: 20px;
-              transition: all 0.5s linear !important;
-              z-index: 1;
-              .nav-side-right-item {
-                ul.list-image {
-                  padding: 20px 0;
-                  li {
-                    background-color: white;
-                    width: 350px;
-                  }
-                  li:hover {
-                    background-color: rgba(0, 0, 0, 0.2);
-                  }
-                }
-                ul.list-menu {
-                  padding: 20px 0;
-                  li {
-                    background-color: white;
-                  }
-                  li:hover {
-                    background-color: rgb(230, 230, 230);
-                  }
-                }
-                ul .btn-porsche button {
-                  width: 50%;
-                }
-              }
-            }
-            .nav-side-right.active-sidemenu-right {
-              transform: translateX(-100%);
-            }
-          }
-        }
       }
       .content {
         height: 85%;
