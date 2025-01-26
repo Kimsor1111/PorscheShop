@@ -100,7 +100,7 @@
           padding: 20px 0;
           li {
             background-color: white;
-            width: 80%;
+            width: 70%;
           }
           li:hover {
             background-color: rgba(0, 0, 0, 0.2);
@@ -152,7 +152,7 @@
       .header-model {
         height: fit-content;
         .btn-container {
-          width: 80% !important;
+          width: 70% !important;
           button {
             width: 100% !important;
             height: 50px;
@@ -170,7 +170,7 @@
           padding: 20px 0;
           li {
             background-color: white;
-            width: 80%;
+            width: 70%;
           }
           li:hover {
             background-color: rgba(0, 0, 0, 0.2);
