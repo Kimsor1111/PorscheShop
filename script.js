@@ -54,7 +54,7 @@ next.addEventListener("click", ()=>{
 dot.forEach((dots, index)=>{
     dots.addEventListener("click",()=>{
         dots.classList.add("active");
-        slider.scrollTo({left: itemsWidth * index, behavoir: "smooth"});
+        slider.scrollTo({left: itemsWidth * index, behavior: "smooth"});
         dot.forEach((inactiveDots, inactiveIndex)=>{
             if(index !== inactiveIndex){
                 inactiveDots.classList.remove("active");
