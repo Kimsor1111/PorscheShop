@@ -134,6 +134,7 @@ body {
 hr {
   margin-top: 100px;
   width: 80%;
+  margin-left: 65px;
 }
 .login-no-pw {
   font-family: "Noto Sans", sans-serif;
