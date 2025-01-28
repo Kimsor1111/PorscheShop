@@ -3,6 +3,7 @@
 }
 /*Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) and (max-width: 1199.98px) {
+  
 }
 /*Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) and (max-width: 991.98px) {
@@ -67,6 +68,49 @@
     .small-banner {
       width: 70%;
     }
+  }
+  .findDealer a {
+    font-size: 16px;
+  }
+  .fa-square-instagram {
+    font-size: 40px;
+  }
+  .upper {
+    height: 200px;
+  }
+  .lower {
+    height: 100px;
+  }
+  .invisible-text p {
+    font-size: 12px;
+  }
+  #socialmedia {
+    font-family: monospace;
+    font-size: 30px;
+    margin-bottom: 20px;
+    margin-top: 50px;
+  }
+  .banner {
+    height: 180px;
+    width: 200px;
+    img {
+      height: inherit;
+      object-fit: cover;
+    }
+    .text {
+      font-size: 12px;
+      padding: 10px 10px;
+    }
+  }
+  .slider-container {
+    margin-inline: 50px 50px;
+    width: 2700px;
+  }
+  #link-md-show {
+    display: block;
+  }
+  #link-md-hidden {
+    display: none;
   }
 }
 
@@ -220,6 +264,53 @@
     .small-banner {
       width: 70%;
     }
+  }
+
+  .findDealer a {
+    font-size: 12px;
+    padding: 5px;
+  }
+  .fa-square-instagram {
+    font-size: 30px;
+  }
+  .upper {
+    height: 150px;
+  }
+  .lower {
+    height: 75px;
+  }
+  .third {
+    display: none;
+  }
+  .invisible-text p {
+    font-size: 10px;
+  }
+  #socialmedia {
+    font-family: monospace;
+    font-size: 20px;
+    margin-bottom: 20px;
+    margin-top: 40px;
+  }
+  .banner {
+    height: 180px;
+    img {
+      height: inherit;
+      object-fit: cover;
+    }
+  }
+  #onlineshop {
+    font-size: 20px;
+    margin-top: 40px;
+  }
+  .slider-container {
+    margin-inline: 50px;
+    width: 2600px;
+  }
+  #link-md-show {
+    display: none;
+  }
+  .sliderbtn .btn {
+    display: none;
   }
 }
 
