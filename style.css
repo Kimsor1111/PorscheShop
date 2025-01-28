@@ -15,6 +15,7 @@ body {
 button {
   font-family: "Poppins" !important;
   cursor: pointer !important;
+  font-weight: 500 !important;
 }
 li {
   cursor: pointer !important;
@@ -440,6 +441,8 @@ h1 {
     color: rgba(237, 32, 10, 0.992);
   }
 }
+
+/* Socialfeature */
 .invisible-text {
   position: absolute;
   bottom: 0;
@@ -473,55 +476,57 @@ h1 {
   background: rgb(43, 42, 42);
 }
 
-.sliderbtn {
+/* slider btn */
+.slider-btn {
   width: 80%;
 }
 
 .slider {
   cursor: grab;
+  .slider-container {
+    width: 2800px;
+    margin-inline: 200px 150px;
+    .slider-item {
+      width: 330px;
+      background-color: rgba(245, 245, 245, 0.544);
+      height: fit-content;
+      border-radius: 20px;
+      cursor: grab;
+      a {
+        cursor: grab;
+      }
+      a:active {
+        cursor: grabbing;
+      }
+      img {
+        transition: linear 0.2s;
+      }
+      .detail {
+        padding: 30px 20px;
+        p {
+          font-family: "Noto Sans";
+          font-size: 15px;
+        }
+        a {
+          font-family: "Poppins", serif;
+        }
+        a:hover {
+          background-color: rgba(128, 128, 128, 0.485);
+        }
+      }
+    }
+    .slider-item:hover {
+      background-color: rgba(106, 104, 104, 0.1);
+      img {
+        transform: scale(1.05);
+      }
+    }
+  }
 }
 .slider:active {
   cursor: grabbing;
 }
-.slider-container {
-  width: 2800px;
-  margin-inline: 200px 150px;
-}
-.slider-item {
-  width: 330px;
-  background-color: rgba(245, 245, 245, 0.544);
-  height: fit-content;
-  border-radius: 20px;
-  cursor: grab;
-  a {
-    cursor: grab;
-  }
-  a:active {
-    cursor: grabbing;
-  }
-  img {
-    transition: linear 0.2s;
-  }
-  .detail {
-    padding: 30px 20px;
-    p {
-      font-family: "Noto Sans";
-      font-size: 15px;
-    }
-    a {
-      font-family: "Poppins", serif;
-    }
-    a:hover {
-      background-color: rgba(128, 128, 128, 0.485);
-    }
-  }
-}
-.slider-item:hover {
-  background-color: rgba(106, 104, 104, 0.1);
-  img {
-    transform: scale(1.05);
-  }
-}
+
 .dot {
   width: 10px;
   height: 10px;
@@ -535,8 +540,10 @@ h1 {
   background-color: black;
   border-radius: 10px;
 }
+/* footer */
 .links a {
   color: white;
+  text-decoration: underline;
 }
 .findDealer a {
   font-size: 20px;

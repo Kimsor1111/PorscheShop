@@ -3,7 +3,6 @@
 }
 /*Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) and (max-width: 1199.98px) {
-  
 }
 /*Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) and (max-width: 991.98px) {
@@ -103,7 +102,7 @@
     }
   }
   .slider-container {
-    margin-inline: 50px 50px;
+    margin-inline: 50px !important;
     width: 2700px;
   }
   #link-md-show {
@@ -266,9 +265,11 @@
     }
   }
 
-  .findDealer a {
-    font-size: 12px;
-    padding: 5px;
+  .findDealer {
+    a {
+      font-size: 12px;
+      padding: 5px;
+    }
   }
   .fa-square-instagram {
     font-size: 30px;
@@ -303,13 +304,13 @@
     margin-top: 40px;
   }
   .slider-container {
-    margin-inline: 50px;
+    margin-inline: 10px 0 !important;
     width: 2600px;
   }
   #link-md-show {
     display: none;
   }
-  .sliderbtn .btn {
+  .slider-btn .btn {
     display: none;
   }
 }

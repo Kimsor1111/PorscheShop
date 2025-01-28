@@ -136,8 +136,8 @@ SideMenuRightCloseBtnModel.forEach((btn, index) => {
 
 // Slider
 const slider = document.querySelector(".slider");
-const prev = document.querySelector(".sliderbtn .prev-btn");
-const next = document.querySelector(".sliderbtn .next-btn");
+const prev = document.querySelector(".slider-btn .prev-btn");
+const next = document.querySelector(".slider-btn .next-btn");
 const dot = document.querySelectorAll(".pagination .dot");
 const items = document.querySelectorAll(".slider-container .slider-item");
 const itemsWidth = items[0].scrollWidth + 20;
