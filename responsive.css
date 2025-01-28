@@ -4,8 +4,8 @@
 /*Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) and (max-width: 1199.98px) {
   .banner {
-    height: 200px;
-    width: 200px;
+    height: 230px;
+    width: 230px;
     .text {
       padding: 10px 0px;
     }

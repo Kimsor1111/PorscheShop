@@ -558,10 +558,11 @@ h1 {
   display: inline-block;
   position: relative;
   overflow: hidden;
+  cursor: pointer;
   background-size: 120% !important;
   background-repeat: no-repeat !important;
   height: 280px;
-  transition: background-size 0.2s ease;
+  transition: background-size 0.3s ease;
   .text {
     position: absolute;
     bottom: 0;

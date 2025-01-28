@@ -140,7 +140,7 @@ const prev = document.querySelector(".slider-btn .prev-btn");
 const next = document.querySelector(".slider-btn .next-btn");
 const dot = document.querySelectorAll(".pagination .dot");
 const items = document.querySelectorAll(".slider-container .slider-item");
-const itemsWidth = items[0].scrollWidth + 20;
+const itemsWidth = items[0].scrollWidth + 30;
 let isDown = false;
 let startX, scrollLeft, x;
 let maxWidth = slider.scrollWidth - slider.clientWidth;
@@ -150,10 +150,10 @@ window.addEventListener("resize", () => {
 });
 
 slider.addEventListener("scroll", () => {
-  let s = Math.round(slider.scrollLeft);
+  let s = Math.ceil(slider.scrollLeft);
   prev.disabled = s > 0 ? false : true;
   next.disabled = s < maxWidth ? false : true;
-  let i = Math.round(s / itemsWidth);
+  let i = Math.ceil(s / itemsWidth);
   dot.forEach((dots, index) => {
     dots.classList.toggle("active", index === i);
   });
