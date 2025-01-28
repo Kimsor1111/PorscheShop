@@ -8,6 +8,9 @@
 }
 body {
   overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 ::-webkit-scrollbar {
   display: none;
@@ -426,6 +429,131 @@ h1 {
   }
 }
 
+/* Ousa */
+.card {
+  border: none;
+  overflow: hidden;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 2;
+}
+.card:hover .image {
+  transform: scale(1.05);
+}
+
+.image-overlay {
+  position: relative;
+}
+
+.image {
+  position: relative;
+  width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+  transition: all 0.5s;
+}
+
+.overlay-number,
+.overlay-title {
+  position: absolute;
+  top: 20px;
+  left: 15px;
+  width: 30%;
+  height: 40px;
+  font-weight: bold;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+  filter: invert(1);
+}
+.overlay-title {
+  position: absolute;
+  top: 20px;
+  left: 15px;
+  width: 50% !important;
+  height: 40px;
+  font-weight: bold;
+  filter: invert(1);
+}
+
+.overlay-badge {
+  position: absolute;
+  top: 70px !important;
+  left: 15px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 0.4rem 1rem;
+  border-radius: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.card-body {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  color: white;
+  font-size: 20px;
+  border-radius: 10px;
+  background-image: linear-gradient(to bottom, transparent, black);
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+.price {
+  font-size: 1.25rem;
+  color: #e0e0e0;
+}
+
+.btn-build {
+  width: 100%;
+  margin-bottom: 0.5rem;
+  font-size: 20px;
+}
+
+.btn-all {
+  width: 100%;
+  color: white;
+  border-color: white;
+  transition: all 0.5s ease-in-out;
+  font-size: 20px;
+}
+
+.btn-all:hover {
+  color: white;
+  background-color: rgba(163, 160, 160, 0.8);
+}
+
+.container-banner {
+  width: 90% !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+.img {
+  width: 55% !important;
+  height: 380px !important;
+  overflow: hidden;
+}
+.container-banner .des {
+  width: 45% !important;
+  height: 380px !important;
+  background-color: black;
+  padding: 30px 50px;
+  border-radius: 10px 0px 0px 10px !important;
+  color: white;
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0 10px 10px 0 !important;
+}
+
 /* Nin */
 .upper {
   position: relative;
@@ -584,7 +712,7 @@ h1 {
   object-fit: contain;
 }
 .banner:hover {
-    background-size: 130% !important;
+  background-size: 130% !important;
 }
 .banner .text h4 {
   font-size: 16px;
