@@ -3,6 +3,20 @@
 }
 /*Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) and (max-width: 1199.98px) {
+  .banner {
+    height: 200px;
+    width: 200px;
+    .text {
+      padding: 10px 0px;
+    }
+    .text h4 {
+      font-size: 15px;
+    }
+    .text i {
+      font-size: 12px;
+      padding-bottom: 5px;
+    }
+  }
 }
 /*Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) and (max-width: 991.98px) {
@@ -90,15 +104,17 @@
     margin-top: 50px;
   }
   .banner {
-    height: 180px;
+    height: 200px;
     width: 200px;
-    img {
-      height: inherit;
-      object-fit: cover;
-    }
     .text {
+      padding: 10px 0px;
+    }
+    .text h4 {
+      font-size: 15px;
+    }
+    .text i {
       font-size: 12px;
-      padding: 10px 10px;
+      padding-bottom: 5px;
     }
   }
   .slider-container {
@@ -293,11 +309,7 @@
     margin-top: 40px;
   }
   .banner {
-    height: 180px;
-    img {
-      height: inherit;
-      object-fit: cover;
-    }
+    height: 270px !important;
   }
   #onlineshop {
     font-size: 20px;
@@ -312,6 +324,20 @@
   }
   .slider-btn .btn {
     display: none;
+  }
+  .banner {
+    height: 14rem;
+    .text h4 {
+      font-size: 16px;
+    }
+    .text i {
+      font-size: 14px;
+      padding-bottom: 5px;
+    }
+    img {
+      height: inherit;
+      object-fit: cover;
+    }
   }
 }
 

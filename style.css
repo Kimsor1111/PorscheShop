@@ -554,3 +554,41 @@ h1 {
 #link-md-show {
   display: none;
 }
+.banner {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  background-size: 120% !important;
+  background-repeat: no-repeat !important;
+  height: 280px;
+  transition: background-size 0.2s ease;
+  .text {
+    position: absolute;
+    bottom: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 20px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+  }
+}
+.banner img {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: linear 0.3s;
+  object-position: center;
+  object-fit: contain;
+}
+.banner:hover {
+    background-size: 130% !important;
+}
+.banner .text h4 {
+  font-size: 16px;
+}
+.banner .text i {
+  font-size: 14px;
+  padding-bottom: 5px;
+}
