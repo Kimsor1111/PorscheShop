@@ -114,45 +114,7 @@ body {
   top: 15px;
   position: absolute;
 }
-.text2 {
-  font-family: "Noto Sans", sans-serif;
-  font-size: 15px;
-  width: 100%;
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  position: relative;
-  margin-top: 40px;
-  p {
-    position: absolute;
-    top: 15px;
-    left: 118px;
-  }
-  a {
-  }
-}
-hr {
-  margin-top: 100px;
-  width: 80%;
-  margin-left: 65px;
-}
-.login-no-pw {
-  font-family: "Noto Sans", sans-serif;
-  font-size: 15px;
-  width: 100%;
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  position: relative;
-  p {
-    height: 30px;
-    width: 40%;
-    background-color: white;
-    position: absolute;
-    text-align: center;
-    margin-top: -2px;
-  }
-}
+
 .login-w-email {
   width: 100%;
   display: flex;
@@ -167,24 +129,15 @@ hr {
     align-items: center;
     display: flex;
     justify-content: left;
- 
     i {
       font-size: 20px;
       margin-left: 20px;
     }
-    a {
+    p {
       font-size: 15px;
       margin-left: 30px;
-      text-decoration: none;
-      color: black;
-       
     }
   }
-}
-.login-w-email button:hover{
-
-    background-color: rgba(128, 128, 128, 0.438);
- 
 }
 .fotter{
   background-color: black; 
