@@ -1,3 +1,7 @@
+window.addEventListener("load", () => {
+  window.scrollTo(0, 0);
+});
+
 //pause/play
 const Video = document.querySelector(".feature-container video");
 const VideoBtnPause = document.querySelector(
